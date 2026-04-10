@@ -1,0 +1,70 @@
+ID,Name,X,Y,Type
+DinhDL,Dinh Độc Lập,150,200,Di tích lịch sử
+UEH,ĐH Kinh tế TP.HCM (Cơ sở A),165,170,Đại học
+NhaThoDucBa,Nhà thờ Đức Bà,180,185,Công trình kiến trúc
+VCDK,Vincom Center Đồng Khởi,220,200,TTTM
+ChoBenThanh,Chợ Bến Thành,140,250,Chợ truyền thống
+BuiVien,Phố Tây Bùi Viện,120,260,Vui chơi
+HCMUT,ĐH Bách khoa (Lý Thường Kiệt),80,220,Đại học
+BaoTangLS,Bảo tàng Lịch sử,250,150,Bảo tàng
+BVChoRay,Bệnh viện Chợ Rẫy,50,270,Y tế
+ThaoCamVien,Thảo Cầm Viên,270,140,Công viên
+TAKA,Saigon Centre (Takashimaya),205,230,TTTM
+HCMUS,ĐH Khoa học Tự nhiên,130,240,Đại học
+PhoDiBoHue,Phố đi bộ Nguyễn Huệ,220,240,Vui chơi
+BXMD,Bến xe Miền Đông,260,50,Giao thông
+BenNhaRong,Bến Nhà Rồng,250,280,Di tích lịch sử
+CRES,Crescent Mall,280,450,TTTM
+Bitexco,Tòa nhà Bitexco,230,260,Tòa nhà biểu tượng
+HCMUSSH,ĐH KHXH & Nhân văn (Quận 1),210,170,Đại học
+ChuaNgocHoang,Chùa Ngọc Hoàng,180,130,Tâm linh
+Landmark81,Landmark 81,400,150,Tòa nhà biểu tượng
+VIVO,SC Vivo City,220,440,TTTM
+CongVien239,Công viên 23/9,100,260,Công viên
+UIT,ĐH Công nghệ Thông tin,520,80,Đại học
+CongVienTaoDan,Công viên Tao Đàn,110,210,Công viên
+BVDHYD,BV Đại học Y Dược,60,280,Y tế
+ChoTanDinh,Chợ Tân Định,130,100,Chợ truyền thống
+IU,ĐH Quốc tế (ĐHQG),510,90,Đại học
+ChuaVinhNghiem,Chùa Vĩnh Nghiêm,80,80,Tâm linh
+LotteQ7,Lotte Mart Quận 7,200,420,TTTM
+BaoTangMyThuat,Bảo tàng Mỹ thuật,160,270,Bảo tàng
+UEL,ĐH Kinh tế - Luật,480,110,Đại học
+SanBayTSN,Sân bay Tân Sơn Nhất,50,30,Giao thông
+VMMTD,Vincom Mega Mall Thảo Điền,400,180,TTTM
+HoConRua,Hồ Con Rùa,170,160,Vui chơi
+OU,ĐH Mở TP.HCM,160,185,Đại học
+ChoLon,Chợ Lớn (Bình Tây),20,350,Chợ truyền thống
+GigaMall,Gigamall Phạm Văn Đồng,300,60,TTTM
+ChuaBaThienHau,Chùa Bà Thiên Hậu,30,340,Tâm linh
+UFM,ĐH Tài chính - Marketing,240,320,Đại học
+ThongNhat,SVĐ Thống Nhất,80,250,Thể thao
+DamSenPark,Công viên Đầm Sen,20,250,Vui chơi
+UAH,ĐH Kiến trúc TP.HCM,175,180,Đại học
+SuoiTienPark,Khu du lịch Suối Tiên,550,100,Vui chơi
+AeonTP,Aeon Mall Tân Phú,30,180,TTTM
+NLU,ĐH Nông Lâm TP.HCM,550,70,Đại học
+CauThuThiem2,Cầu Ba Son (Thủ Thiêm 2),280,220,Giao thông
+HCMUC,ĐH Văn hóa TP.HCM,380,190,Đại học
+HamThuThiem,Hầm Thủ Thiêm,260,260,Giao thông
+VanHanh,Vạn Hạnh Mall,100,230,TTTM
+SGU,ĐH Sài Gòn (An Dương Vương),120,250,Đại học
+BXMT,Bến xe Miền Tây,10,350,Giao thông
+BuuDienTP,Bưu điện Trung tâm,195,180,Công trình kiến trúc
+QK7,Nhà thi đấu Quân Khu 7,90,80,Thể thao
+NhaHatTP,Nhà hát Thành phố,210,210,Văn hóa
+TDTU,Đại học Tôn Đức Thắng,200,480,Đại học
+BaoTangChungTich,Bảo tàng Chứng tích Chiến tranh,120,180,Bảo tàng
+CauAnhSao,Cầu Ánh Sao,290,460,Vui chơi
+CongVienLeVanTam,Công viên Lê Văn Tám,140,120,Công viên
+RMIT,Đại học RMIT,190,490,Đại học
+NhaRongWharf,Cảng hành khách tàu biển,260,300,Giao thông
+HoBanNguyet,Hồ Bán Nguyệt,285,455,Vui chơi
+GaSaiGon,Ga Sài Gòn,50,150,Giao thông
+NhaThoTanDinh,Nhà thờ Tân Định,140,110,Tâm linh
+DinhDocLap_Back,Cổng sau Dinh Độc Lập,130,190,Di tích
+ChoAnDong,Chợ An Đông,110,290,Chợ truyền thống
+NhaThiDauPhuTho,Nhà thi đấu Phú Thọ,40,280,Thể thao
+BinhQuoi,Khu du lịch Bình Quới,400,80,Vui chơi
+HTV,Đài truyền hình HTV,230,160,Công trình kiến trúc
+AeonBT,Aeon Mall Bình Tân,10,300,TTTM
