@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace DoAnCuoiKy_Dijkstra
 {
@@ -18,7 +19,7 @@ namespace DoAnCuoiKy_Dijkstra
 
         // Danh sách các cạnh kề (adjacency list)
         // Mỗi cạnh nối đến một đỉnh khác kèm theo trọng số
-        public MyLinkedList<Edge> Edges { get; private set; }
+        public CustomLinkedList<Edge> Edges { get; private set; }
 
         // Constructor: khởi tạo một đỉnh
         public Vertex(string id, string name, double x, double y)
@@ -41,7 +42,7 @@ namespace DoAnCuoiKy_Dijkstra
 
             // Khởi tạo danh sách cạnh kề rỗng
             // Dùng LinkedList theo yêu cầu đề bài
-            Edges = new MyLinkedList<Edge>();
+            Edges = new CustomLinkedList<Edge>();
         }
 
         // Ghi đè phương thức ToString để hiển thị thông tin đỉnh
