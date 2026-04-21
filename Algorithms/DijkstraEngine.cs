@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace DoAnCuoiKy_Dijkstra
 {
@@ -36,9 +37,9 @@ namespace DoAnCuoiKy_Dijkstra
 
         // Dựng lại đường đi ngắn nhất từ mảng previous
         // previous[i] lưu chỉ số đỉnh đứng trước đỉnh i trên đường đi ngắn nhất
-        private MyLinkedList<Vertex> BuildPath(int[] previous, int startIndex, int endIndex)
+        private CustomLinkedList<Vertex> BuildPath(int[] previous, int startIndex, int endIndex)
         {
-            MyLinkedList<Vertex> path = new MyLinkedList<Vertex>();
+            CustomLinkedList<Vertex> path = new CustomLinkedList<Vertex>();
             int currentIndex = endIndex;
 
             // Truy vết ngược từ đỉnh đích về đỉnh nguồn
@@ -106,7 +107,7 @@ namespace DoAnCuoiKy_Dijkstra
             // Trường hợp điểm bắt đầu trùng điểm kết thúc
             if (startIndex == endIndex)
             {
-                MyLinkedList<Vertex> samePath = new MyLinkedList<Vertex>();
+                CustomLinkedList<Vertex> samePath = new CustomLinkedList<Vertex>();
                 samePath.AddFirst(startVertex);
 
                 return new PathResult(samePath, 0);
@@ -194,7 +195,7 @@ namespace DoAnCuoiKy_Dijkstra
                 return null;
 
             // Dựng lại đường đi ngắn nhất
-            MyLinkedList<Vertex> path = BuildPath(previous, startIndex, endIndex);
+            CustomLinkedList<Vertex> path = BuildPath(previous, startIndex, endIndex);
 
             if (path == null)
                 return null;
