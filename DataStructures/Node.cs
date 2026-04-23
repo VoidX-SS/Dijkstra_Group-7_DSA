@@ -2,6 +2,7 @@ using System;
 
 namespace DoAnCuoiKy_Dijkstra
 {
+    // Lớp ListNode Generic, nền tảng cho CustomLinkedList
     public class ListNode<T>
     {
         public T Data { get; set; }
