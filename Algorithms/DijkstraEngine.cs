@@ -5,203 +5,128 @@ namespace DoAnCuoiKy_Dijkstra
 {
     public class DijkstraEngine
     {
-        // Đồ thị cần xử lý
         private Graph graph;
 
-        // Constructor: nhận vào đồ thị đã được tạo sẵn
         public DijkstraEngine(Graph graph)
         {
             if (graph == null)
-                throw new ArgumentNullException("graph", "Đồ thị không được null.");
-
+                throw new ArgumentNullException("graph");
             this.graph = graph;
         }
 
-        // Tìm chỉ số của đỉnh chưa xét có khoảng cách nhỏ nhất
-        private int GetMinDistanceVertexIndex(double[] distances, bool[] visited)
-        {
-            double minDistance = double.MaxValue;
-            int minIndex = -1;
-
-            for (int i = 0; i < distances.Length; i++)
-            {
-                if (!visited[i] && distances[i] < minDistance)
-                {
-                    minDistance = distances[i];
-                    minIndex = i;
-                }
-            }
-
-            return minIndex;
-        }
-
-        // Dựng lại đường đi ngắn nhất từ mảng previous
-        // previous[i] lưu chỉ số đỉnh đứng trước đỉnh i trên đường đi ngắn nhất
-        private CustomLinkedList<Vertex> BuildPath(int[] previous, int startIndex, int endIndex)
+        // Dựng lại đường đi từ điển lưu vết
+        private CustomLinkedList<Vertex> BuildPath(Dictionary<Vertex, Vertex> previous, Vertex startVertex, Vertex endVertex)
         {
             CustomLinkedList<Vertex> path = new CustomLinkedList<Vertex>();
-            int currentIndex = endIndex;
+            Vertex current = endVertex;
 
-            // Truy vết ngược từ đỉnh đích về đỉnh nguồn
-            while (currentIndex != -1)
+            while (current != null)
             {
-                Vertex currentVertex = graph.GetVertexAt(currentIndex);
+                path.AddFirst(current); // Thêm vào đầu để đúng thứ tự Nguồn -> Đích
 
-                if (currentVertex == null)
-                    return null;
-
-                // Thêm vào đầu danh sách để có đúng thứ tự từ nguồn đến đích
-                path.AddFirst(currentVertex);
-
-                if (currentIndex == startIndex)
+                if (current == startVertex)
                     break;
 
-                currentIndex = previous[currentIndex];
+                // Nếu không có vết để đi lùi và chưa đến điểm đầu thì không có đường đi
+                if (!previous.ContainsKey(current))
+                    return null;
+
+                current = previous[current];
             }
-
-            // Kiểm tra đường đi có hợp lệ hay không
-            Vertex startVertex = graph.GetVertexAt(startIndex);
-
-            if (path.Head == null || startVertex == null || path.Head.Data.Id != startVertex.Id)
-                return null;
 
             return path;
         }
 
-        // Hàm chính: tìm đường đi ngắn nhất từ startId đến endId bằng thuật toán Dijkstra
+        // Tìm đường đi ngắn nhất bằng MinHeap
         public PathResult FindShortestPath(string startId, string endId)
         {
-            // Kiểm tra dữ liệu đầu vào
-            if (string.IsNullOrWhiteSpace(startId))
-                throw new ArgumentException("Mã địa điểm bắt đầu không hợp lệ.", "startId");
+            if (string.IsNullOrWhiteSpace(startId) || string.IsNullOrWhiteSpace(endId))
+                throw new ArgumentException("ID không hợp lệ.");
 
-            if (string.IsNullOrWhiteSpace(endId))
-                throw new ArgumentException("Mã địa điểm kết thúc không hợp lệ.", "endId");
+            Vertex startVertex = graph.GetVertex(startId);
+            Vertex endVertex = graph.GetVertex(endId);
 
-            // Chuẩn hóa dữ liệu
-            startId = startId.Trim();
-            endId = endId.Trim();
+            if (startVertex == null || endVertex == null)
+                throw new ArgumentException("Điểm bắt đầu hoặc kết thúc không tồn tại trong đồ thị.");
 
-            // Kiểm tra đồ thị
-            int n = graph.VertexCount();
-            if (n <= 0)
-                throw new InvalidOperationException("Đồ thị rỗng, không thể tìm đường đi.");
-
-            // Tìm đỉnh bắt đầu và đỉnh kết thúc
-            Vertex startVertex = graph.FindVertexById(startId);
-            Vertex endVertex = graph.FindVertexById(endId);
-
-            if (startVertex == null)
-                throw new Exception("Không tìm thấy địa điểm bắt đầu.");
-
-            if (endVertex == null)
-                throw new Exception("Không tìm thấy địa điểm kết thúc.");
-
-            // Lấy vị trí của hai đỉnh trong đồ thị
-            int startIndex = graph.GetVertexIndex(startVertex);
-            int endIndex = graph.GetVertexIndex(endVertex);
-
-            if (startIndex == -1 || endIndex == -1)
-                throw new Exception("Không xác định được vị trí đỉnh trong đồ thị.");
-
-            // Trường hợp điểm bắt đầu trùng điểm kết thúc
-            if (startIndex == endIndex)
+            // Trường hợp bắt đầu trùng kết thúc
+            if (startVertex == endVertex)
             {
                 CustomLinkedList<Vertex> samePath = new CustomLinkedList<Vertex>();
-                samePath.AddFirst(startVertex);
-
+                samePath.AddLast(startVertex);
                 return new PathResult(samePath, 0);
             }
 
-            // distances[i]: khoảng cách ngắn nhất tạm thời từ đỉnh bắt đầu đến đỉnh i
-            double[] distances = new double[n];
+            // distances: Bản đồ lưu khoảng cách ngắn nhất tạm thời từ đỉnh xuất phát tới các đỉnh khác
+            Dictionary<Vertex, double> distances = new Dictionary<Vertex, double>();
+            // previous: Bản đồ lưu đỉnh liền trước trên đường đi ngắn nhất (để truy vết)
+            Dictionary<Vertex, Vertex> previous = new Dictionary<Vertex, Vertex>();
+            // minHeap: Hàng đợi ưu tiên lấy đỉnh có khoảng cách ngắn nhất
+            MinHeap<Vertex> minHeap = new MinHeap<Vertex>();
 
-            // visited[i]: đánh dấu đỉnh i đã được xét hay chưa
-            bool[] visited = new bool[n];
+            // Khởi tạo trạng thái ban đầu: Khoảng cách tới tất cả đỉnh là vô cực
+            foreach (Vertex v in graph.GetAllVertices())
+                distances.Add(v, double.MaxValue);
 
-            // previous[i]: lưu chỉ số đỉnh đứng trước i trên đường đi ngắn nhất
-            int[] previous = new int[n];
+            // Khoảng cách tới điểm xuất phát = 0
+            distances[startVertex] = 0;
+            minHeap.Insert(startVertex, 0);
 
-            // Khởi tạo ban đầu
-            for (int i = 0; i < n; i++)
+            // Vòng lặp chính của Dijkstra
+            while (!minHeap.IsEmpty())
             {
-                distances[i] = double.MaxValue;
-                visited[i] = false;
-                previous[i] = -1;
-            }
+                // Bước 1: Lấy đỉnh có khoảng cách nhỏ nhất trong các đỉnh chưa xét xong
+                Vertex currentVertex = minHeap.ExtractMin();
+                double currentDistance = distances[currentVertex];
 
-            // Khoảng cách từ đỉnh bắt đầu đến chính nó bằng 0
-            distances[startIndex] = 0;
-
-            // Vòng lặp chính của thuật toán Dijkstra
-            for (int count = 0; count < n; count++)
-            {
-                // Chọn đỉnh chưa xét có khoảng cách nhỏ nhất
-                int currentIndex = GetMinDistanceVertexIndex(distances, visited);
-
-                if (currentIndex == -1)
+                // Nếu đã đến đích thì có thể dừng
+                if (currentVertex == endVertex)
                     break;
 
-                // Nếu khoảng cách vẫn là vô cực thì các đỉnh còn lại không thể đi tới
-                if (distances[currentIndex] == double.MaxValue)
-                    break;
-
-                visited[currentIndex] = true;
-
-                // Nếu đã tới đích thì dừng sớm
-                if (currentIndex == endIndex)
-                    break;
-
-                Vertex currentVertex = graph.GetVertexAt(currentIndex);
-
-                if (currentVertex == null || currentVertex.Edges == null)
-                    continue;
-
-                // Duyệt các cạnh kề của đỉnh hiện tại
+                // Bước 2: Duyệt qua các cạnh kề của đỉnh hiện tại bằng vòng lặp while với con trỏ
                 ListNode<Edge> edgeNode = currentVertex.Edges.Head;
-
                 while (edgeNode != null)
                 {
                     Edge edge = edgeNode.Data;
+                    Vertex neighbor = edge.Destination;
+                    double weight = edge.Weight;
 
-                    if (edge != null && edge.Destination != null)
+                    if (weight < 0)
+                        throw new InvalidOperationException("Dijkstra không hỗ trợ cạnh có trọng số âm.");
+
+                    double newDistance = currentDistance + weight;
+
+                    // Bước 3: Nếu tìm được đường ngắn hơn thì cập nhật lại
+                    if (newDistance < distances[neighbor])
                     {
-                        // Dijkstra không hỗ trợ cạnh có trọng số âm
-                        if (edge.Weight < 0)
-                            throw new Exception("Thuật toán Dijkstra không hỗ trợ cạnh có trọng số âm.");
+                        distances[neighbor] = newDistance;
+                        
+                        if (previous.ContainsKey(neighbor))
+                            previous[neighbor] = currentVertex; 
+                        else
+                            previous.Add(neighbor, currentVertex); 
 
-                        int neighborIndex = graph.GetVertexIndex(edge.Destination);
-
-                        // Chỉ xét đỉnh kề chưa được duyệt
-                        if (neighborIndex != -1 && !visited[neighborIndex])
-                        {
-                            double newDistance = distances[currentIndex] + edge.Weight;
-
-                            // Nếu tìm được đường đi ngắn hơn thì cập nhật
-                            if (newDistance < distances[neighborIndex])
-                            {
-                                distances[neighborIndex] = newDistance;
-                                previous[neighborIndex] = currentIndex;
-                            }
-                        }
+                        // Nếu đỉnh đã có trong heap thì cập nhật độ ưu tiên, nếu chưa thì thêm vào
+                        if (minHeap.Contains(neighbor))
+                            minHeap.DecreaseKey(neighbor, newDistance);
+                        else
+                            minHeap.Insert(neighbor, newDistance);
                     }
-
+                    
                     edgeNode = edgeNode.Next;
                 }
             }
 
-            // Nếu khoảng cách tới đích vẫn là vô cực thì không tồn tại đường đi
-            if (distances[endIndex] == double.MaxValue)
+            // Nếu khoảng cách đến đích vẫn là vô cực, tức là không có đường đi nối giữa 2 đỉnh
+            if (distances[endVertex] == double.MaxValue)
                 return null;
 
-            // Dựng lại đường đi ngắn nhất
-            CustomLinkedList<Vertex> path = BuildPath(previous, startIndex, endIndex);
-
-            if (path == null)
+            // Xây dựng lại danh sách đường đi từ vết lưu
+            CustomLinkedList<Vertex> path = BuildPath(previous, startVertex, endVertex);
+            if (path == null) 
                 return null;
 
-            // Trả về kết quả cuối cùng
-            return new PathResult(path, distances[endIndex]);
+            return new PathResult(path, distances[endVertex]);
         }
     }
 }
