@@ -1,70 +1,1001 @@
 ID,Name,X,Y,Type
 DinhDL,Dinh Độc Lập,150,200,Di tích lịch sử
 UEH,ĐH Kinh tế TP.HCM (Cơ sở A),165,170,Đại học
-NhaThoDucBa,Nhà thờ Đức Bà,180,185,Công trình kiến trúc
-VCDK,Vincom Center Đồng Khởi,220,200,TTTM
 ChoBenThanh,Chợ Bến Thành,140,250,Chợ truyền thống
 BuiVien,Phố Tây Bùi Viện,120,260,Vui chơi
-HCMUT,ĐH Bách khoa (Lý Thường Kiệt),80,220,Đại học
-BaoTangLS,Bảo tàng Lịch sử,250,150,Bảo tàng
-BVChoRay,Bệnh viện Chợ Rẫy,50,270,Y tế
-ThaoCamVien,Thảo Cầm Viên,270,140,Công viên
-TAKA,Saigon Centre (Takashimaya),205,230,TTTM
-HCMUS,ĐH Khoa học Tự nhiên,130,240,Đại học
-PhoDiBoHue,Phố đi bộ Nguyễn Huệ,220,240,Vui chơi
-BXMD,Bến xe Miền Đông,260,50,Giao thông
-BenNhaRong,Bến Nhà Rồng,250,280,Di tích lịch sử
-CRES,Crescent Mall,280,450,TTTM
-Bitexco,Tòa nhà Bitexco,230,260,Tòa nhà biểu tượng
-HCMUSSH,ĐH KHXH & Nhân văn (Quận 1),210,170,Đại học
-ChuaNgocHoang,Chùa Ngọc Hoàng,180,130,Tâm linh
-Landmark81,Landmark 81,400,150,Tòa nhà biểu tượng
-VIVO,SC Vivo City,220,440,TTTM
-CongVien239,Công viên 23/9,100,260,Công viên
-UIT,ĐH Công nghệ Thông tin,520,80,Đại học
-CongVienTaoDan,Công viên Tao Đàn,110,210,Công viên
-BVDHYD,BV Đại học Y Dược,60,280,Y tế
-ChoTanDinh,Chợ Tân Định,130,100,Chợ truyền thống
-IU,ĐH Quốc tế (ĐHQG),510,90,Đại học
-ChuaVinhNghiem,Chùa Vĩnh Nghiêm,80,80,Tâm linh
-LotteQ7,Lotte Mart Quận 7,200,420,TTTM
-BaoTangMyThuat,Bảo tàng Mỹ thuật,160,270,Bảo tàng
-UEL,ĐH Kinh tế - Luật,480,110,Đại học
-SanBayTSN,Sân bay Tân Sơn Nhất,50,30,Giao thông
-VMMTD,Vincom Mega Mall Thảo Điền,400,180,TTTM
-HoConRua,Hồ Con Rùa,170,160,Vui chơi
-OU,ĐH Mở TP.HCM,160,185,Đại học
-ChoLon,Chợ Lớn (Bình Tây),20,350,Chợ truyền thống
-GigaMall,Gigamall Phạm Văn Đồng,300,60,TTTM
-ChuaBaThienHau,Chùa Bà Thiên Hậu,30,340,Tâm linh
-UFM,ĐH Tài chính - Marketing,240,320,Đại học
-ThongNhat,SVĐ Thống Nhất,80,250,Thể thao
-DamSenPark,Công viên Đầm Sen,20,250,Vui chơi
-UAH,ĐH Kiến trúc TP.HCM,175,180,Đại học
-SuoiTienPark,Khu du lịch Suối Tiên,550,100,Vui chơi
-AeonTP,Aeon Mall Tân Phú,30,180,TTTM
-NLU,ĐH Nông Lâm TP.HCM,550,70,Đại học
-CauThuThiem2,Cầu Ba Son (Thủ Thiêm 2),280,220,Giao thông
-HCMUC,ĐH Văn hóa TP.HCM,380,190,Đại học
-HamThuThiem,Hầm Thủ Thiêm,260,260,Giao thông
-VanHanh,Vạn Hạnh Mall,100,230,TTTM
-SGU,ĐH Sài Gòn (An Dương Vương),120,250,Đại học
-BXMT,Bến xe Miền Tây,10,350,Giao thông
-BuuDienTP,Bưu điện Trung tâm,195,180,Công trình kiến trúc
-QK7,Nhà thi đấu Quân Khu 7,90,80,Thể thao
-NhaHatTP,Nhà hát Thành phố,210,210,Văn hóa
-TDTU,Đại học Tôn Đức Thắng,200,480,Đại học
-BaoTangChungTich,Bảo tàng Chứng tích Chiến tranh,120,180,Bảo tàng
-CauAnhSao,Cầu Ánh Sao,290,460,Vui chơi
-CongVienLeVanTam,Công viên Lê Văn Tám,140,120,Công viên
-RMIT,Đại học RMIT,190,490,Đại học
-NhaRongWharf,Cảng hành khách tàu biển,260,300,Giao thông
-HoBanNguyet,Hồ Bán Nguyệt,285,455,Vui chơi
-GaSaiGon,Ga Sài Gòn,50,150,Giao thông
-NhaThoTanDinh,Nhà thờ Tân Định,140,110,Tâm linh
-DinhDocLap_Back,Cổng sau Dinh Độc Lập,130,190,Di tích
-ChoAnDong,Chợ An Đông,110,290,Chợ truyền thống
-NhaThiDauPhuTho,Nhà thi đấu Phú Thọ,40,280,Thể thao
-BinhQuoi,Khu du lịch Bình Quới,400,80,Vui chơi
-HTV,Đài truyền hình HTV,230,160,Công trình kiến trúc
-AeonBT,Aeon Mall Bình Tân,10,300,TTTM
+DT_Q1_1,Di tích lịch sử Q1 1,25,281,Di tích lịch sử
+BV_Q3_2,Y tế Q3 2,142,104,Y tế
+DT_ThuDuc_3,Di tích lịch sử ThuDuc 3,558,89,Di tích lịch sử
+TTTM_Q7_4,TTTM Q7 4,32,30,TTTM
+DH_Q3_5,Đại học Q3 5,238,517,Đại học
+TTTM_Q1_6,TTTM Q1 6,574,203,TTTM
+DT_ThuDuc_7,Di tích lịch sử ThuDuc 7,558,429,Di tích lịch sử
+BV_Q7_8,Y tế Q7 8,284,6,Y tế
+VuiChoi_BinhThanh_9,Vui chơi BinhThanh 9,163,432,Vui chơi
+CongVien_Q5_10,Công viên Q5 10,159,220,Công viên
+VuiChoi_Q5_11,Vui chơi Q5 11,104,94,Vui chơi
+Cho_Q1_12,Chợ truyền thống Q1 12,367,352,Chợ truyền thống
+TTTM_Q5_13,TTTM Q5 13,44,470,TTTM
+TTTM_Q1_14,TTTM Q1 14,387,80,TTTM
+TTTM_Q5_15,TTTM Q5 15,370,591,TTTM
+BV_ThuDuc_16,Y tế ThuDuc 16,71,46,Y tế
+DT_Q3_17,Di tích lịch sử Q3 17,296,81,Di tích lịch sử
+VuiChoi_Q3_18,Vui chơi Q3 18,103,389,Vui chơi
+CongVien_Q7_19,Công viên Q7 19,373,166,Công viên
+CongVien_Q5_20,Công viên Q5 20,214,273,Công viên
+DT_ThuDuc_21,Di tích lịch sử ThuDuc 21,73,175,Di tích lịch sử
+TTTM_ThuDuc_22,TTTM ThuDuc 22,250,167,TTTM
+Cho_Q7_23,Chợ truyền thống Q7 23,276,570,Chợ truyền thống
+BV_ThuDuc_24,Y tế ThuDuc 24,332,57,Y tế
+BV_BinhThanh_25,Y tế BinhThanh 25,32,323,Y tế
+Cho_Q5_26,Chợ truyền thống Q5 26,67,216,Chợ truyền thống
+TTTM_ThuDuc_27,TTTM ThuDuc 27,322,217,TTTM
+DT_Q7_28,Di tích lịch sử Q7 28,405,469,Di tích lịch sử
+BV_Q5_29,Y tế Q5 29,142,252,Y tế
+DT_Q10_30,Di tích lịch sử Q10 30,551,269,Di tích lịch sử
+DT_Q10_31,Di tích lịch sử Q10 31,438,597,Di tích lịch sử
+Cho_Q5_32,Chợ truyền thống Q5 32,224,141,Chợ truyền thống
+TTTM_Q7_33,TTTM Q7 33,93,48,TTTM
+VuiChoi_Q1_34,Vui chơi Q1 34,156,163,Vui chơi
+VuiChoi_ThuDuc_35,Vui chơi ThuDuc 35,432,65,Vui chơi
+Cho_Q7_36,Chợ truyền thống Q7 36,479,541,Chợ truyền thống
+CongVien_Q10_37,Công viên Q10 37,11,117,Công viên
+DT_Q10_38,Di tích lịch sử Q10 38,273,348,Di tích lịch sử
+DH_Q5_39,Đại học Q5 39,445,161,Đại học
+Cho_Q1_40,Chợ truyền thống Q1 40,269,512,Chợ truyền thống
+VuiChoi_Q3_41,Vui chơi Q3 41,519,108,Vui chơi
+VuiChoi_ThuDuc_42,Vui chơi ThuDuc 42,305,519,Vui chơi
+TTTM_Q3_43,TTTM Q3 43,156,382,TTTM
+VuiChoi_Q3_44,Vui chơi Q3 44,552,543,Vui chơi
+DH_Q10_45,Đại học Q10 45,331,500,Đại học
+DH_Q1_46,Đại học Q1 46,371,314,Đại học
+BV_Q1_47,Y tế Q1 47,246,580,Y tế
+DH_Q1_48,Đại học Q1 48,497,70,Đại học
+VuiChoi_Q10_49,Vui chơi Q10 49,128,131,Vui chơi
+DT_Q7_50,Di tích lịch sử Q7 50,562,169,Di tích lịch sử
+CongVien_Q10_51,Công viên Q10 51,433,216,Công viên
+TTTM_BinhThanh_52,TTTM BinhThanh 52,205,319,TTTM
+Cho_ThuDuc_53,Chợ truyền thống ThuDuc 53,382,448,Chợ truyền thống
+TTTM_Q7_54,TTTM Q7 54,123,253,TTTM
+BV_Q1_55,Y tế Q1 55,346,21,Y tế
+TTTM_Q10_56,TTTM Q10 56,235,225,TTTM
+DH_Q1_57,Đại học Q1 57,60,234,Đại học
+DH_Q1_58,Đại học Q1 58,338,72,Đại học
+TTTM_Q3_59,TTTM Q3 59,285,497,TTTM
+BV_Q10_60,Y tế Q10 60,135,584,Y tế
+TTTM_Q7_61,TTTM Q7 61,248,484,TTTM
+VuiChoi_Q7_62,Vui chơi Q7 62,194,96,Vui chơi
+DH_ThuDuc_63,Đại học ThuDuc 63,441,362,Đại học
+Cho_Q7_64,Chợ truyền thống Q7 64,478,55,Chợ truyền thống
+DT_ThuDuc_65,Di tích lịch sử ThuDuc 65,100,62,Di tích lịch sử
+Cho_ThuDuc_66,Chợ truyền thống ThuDuc 66,347,111,Chợ truyền thống
+BV_Q3_67,Y tế Q3 67,194,549,Y tế
+Cho_Q3_68,Chợ truyền thống Q3 68,432,187,Chợ truyền thống
+CongVien_Q7_69,Công viên Q7 69,255,77,Công viên
+Cho_BinhThanh_70,Chợ truyền thống BinhThanh 70,563,100,Chợ truyền thống
+DH_ThuDuc_71,Đại học ThuDuc 71,553,15,Đại học
+DH_BinhThanh_72,Đại học BinhThanh 72,242,170,Đại học
+Cho_Q7_73,Chợ truyền thống Q7 73,492,218,Chợ truyền thống
+VuiChoi_Q7_74,Vui chơi Q7 74,60,168,Vui chơi
+Cho_Q1_75,Chợ truyền thống Q1 75,399,271,Chợ truyền thống
+VuiChoi_BinhThanh_76,Vui chơi BinhThanh 76,465,292,Vui chơi
+Cho_ThuDuc_77,Chợ truyền thống ThuDuc 77,569,498,Chợ truyền thống
+BV_Q3_78,Y tế Q3 78,303,222,Y tế
+DH_Q10_79,Đại học Q10 79,555,62,Đại học
+DT_Q5_80,Di tích lịch sử Q5 80,58,51,Di tích lịch sử
+TTTM_Q7_81,TTTM Q7 81,514,543,TTTM
+BV_Q1_82,Y tế Q1 82,520,82,Y tế
+VuiChoi_Q3_83,Vui chơi Q3 83,70,69,Vui chơi
+DT_BinhThanh_84,Di tích lịch sử BinhThanh 84,240,413,Di tích lịch sử
+DH_Q10_85,Đại học Q10 85,252,592,Đại học
+TTTM_Q1_86,TTTM Q1 86,83,429,TTTM
+DT_Q10_87,Di tích lịch sử Q10 87,578,535,Di tích lịch sử
+CongVien_Q5_88,Công viên Q5 88,209,321,Công viên
+BV_Q5_89,Y tế Q5 89,405,134,Y tế
+DT_ThuDuc_90,Di tích lịch sử ThuDuc 90,307,468,Di tích lịch sử
+CongVien_BinhThanh_91,Công viên BinhThanh 91,74,9,Công viên
+Cho_Q10_92,Chợ truyền thống Q10 92,576,102,Chợ truyền thống
+DH_Q10_93,Đại học Q10 93,218,518,Đại học
+CongVien_Q3_94,Công viên Q3 94,357,70,Công viên
+BV_Q5_95,Y tế Q5 95,291,161,Y tế
+Cho_BinhThanh_96,Chợ truyền thống BinhThanh 96,556,309,Chợ truyền thống
+TTTM_BinhThanh_97,TTTM BinhThanh 97,541,8,TTTM
+DT_BinhThanh_98,Di tích lịch sử BinhThanh 98,567,306,Di tích lịch sử
+DT_Q1_99,Di tích lịch sử Q1 99,137,270,Di tích lịch sử
+DH_Q1_100,Đại học Q1 100,566,159,Đại học
+CongVien_Q5_101,Công viên Q5 101,215,351,Công viên
+BV_ThuDuc_102,Y tế ThuDuc 102,270,517,Y tế
+Cho_Q5_103,Chợ truyền thống Q5 103,52,94,Chợ truyền thống
+DT_Q7_104,Di tích lịch sử Q7 104,283,45,Di tích lịch sử
+DH_Q5_105,Đại học Q5 105,133,268,Đại học
+BV_ThuDuc_106,Y tế ThuDuc 106,452,564,Y tế
+DT_Q7_107,Di tích lịch sử Q7 107,574,9,Di tích lịch sử
+DH_Q1_108,Đại học Q1 108,152,558,Đại học
+DH_BinhThanh_109,Đại học BinhThanh 109,378,596,Đại học
+TTTM_Q3_110,TTTM Q3 110,440,130,TTTM
+DH_Q5_111,Đại học Q5 111,373,40,Đại học
+CongVien_Q3_112,Công viên Q3 112,255,105,Công viên
+CongVien_BinhThanh_113,Công viên BinhThanh 113,573,416,Công viên
+TTTM_ThuDuc_114,TTTM ThuDuc 114,158,242,TTTM
+VuiChoi_Q3_115,Vui chơi Q3 115,181,422,Vui chơi
+DH_Q3_116,Đại học Q3 116,340,421,Đại học
+VuiChoi_ThuDuc_117,Vui chơi ThuDuc 117,254,273,Vui chơi
+BV_BinhThanh_118,Y tế BinhThanh 118,110,391,Y tế
+VuiChoi_Q1_119,Vui chơi Q1 119,481,227,Vui chơi
+BV_BinhThanh_120,Y tế BinhThanh 120,471,358,Y tế
+CongVien_BinhThanh_121,Công viên BinhThanh 121,233,228,Công viên
+DH_ThuDuc_122,Đại học ThuDuc 122,197,408,Đại học
+CongVien_Q5_123,Công viên Q5 123,71,285,Công viên
+CongVien_ThuDuc_124,Công viên ThuDuc 124,521,409,Công viên
+DT_BinhThanh_125,Di tích lịch sử BinhThanh 125,549,339,Di tích lịch sử
+DH_Q1_126,Đại học Q1 126,267,182,Đại học
+TTTM_Q5_127,TTTM Q5 127,39,111,TTTM
+TTTM_Q7_128,TTTM Q7 128,353,321,TTTM
+Cho_Q10_129,Chợ truyền thống Q10 129,523,118,Chợ truyền thống
+Cho_Q10_130,Chợ truyền thống Q10 130,194,260,Chợ truyền thống
+DH_ThuDuc_131,Đại học ThuDuc 131,446,1,Đại học
+TTTM_BinhThanh_132,TTTM BinhThanh 132,551,201,TTTM
+CongVien_Q7_133,Công viên Q7 133,71,338,Công viên
+TTTM_Q5_134,TTTM Q5 134,127,307,TTTM
+TTTM_Q5_135,TTTM Q5 135,418,334,TTTM
+Cho_ThuDuc_136,Chợ truyền thống ThuDuc 136,302,567,Chợ truyền thống
+BV_Q3_137,Y tế Q3 137,430,388,Y tế
+DT_ThuDuc_138,Di tích lịch sử ThuDuc 138,178,582,Di tích lịch sử
+CongVien_Q7_139,Công viên Q7 139,561,0,Công viên
+CongVien_Q5_140,Công viên Q5 140,215,440,Công viên
+VuiChoi_Q10_141,Vui chơi Q10 141,329,476,Vui chơi
+Cho_Q7_142,Chợ truyền thống Q7 142,218,523,Chợ truyền thống
+Cho_BinhThanh_143,Chợ truyền thống BinhThanh 143,173,86,Chợ truyền thống
+CongVien_Q10_144,Công viên Q10 144,343,95,Công viên
+VuiChoi_BinhThanh_145,Vui chơi BinhThanh 145,240,317,Vui chơi
+BV_BinhThanh_146,Y tế BinhThanh 146,203,150,Y tế
+DH_Q1_147,Đại học Q1 147,250,486,Đại học
+TTTM_BinhThanh_148,TTTM BinhThanh 148,74,466,TTTM
+Cho_ThuDuc_149,Chợ truyền thống ThuDuc 149,589,199,Chợ truyền thống
+DT_ThuDuc_150,Di tích lịch sử ThuDuc 150,393,506,Di tích lịch sử
+Cho_Q3_151,Chợ truyền thống Q3 151,151,5,Chợ truyền thống
+VuiChoi_BinhThanh_152,Vui chơi BinhThanh 152,109,435,Vui chơi
+BV_Q3_153,Y tế Q3 153,530,475,Y tế
+DH_Q10_154,Đại học Q10 154,255,124,Đại học
+Cho_Q3_155,Chợ truyền thống Q3 155,475,543,Chợ truyền thống
+TTTM_Q10_156,TTTM Q10 156,324,453,TTTM
+TTTM_BinhThanh_157,TTTM BinhThanh 157,516,436,TTTM
+VuiChoi_Q10_158,Vui chơi Q10 158,456,162,Vui chơi
+DT_BinhThanh_159,Di tích lịch sử BinhThanh 159,486,460,Di tích lịch sử
+CongVien_BinhThanh_160,Công viên BinhThanh 160,253,283,Công viên
+VuiChoi_BinhThanh_161,Vui chơi BinhThanh 161,533,496,Vui chơi
+DT_Q3_162,Di tích lịch sử Q3 162,281,450,Di tích lịch sử
+DH_ThuDuc_163,Đại học ThuDuc 163,292,240,Đại học
+CongVien_Q5_164,Công viên Q5 164,327,553,Công viên
+DH_Q3_165,Đại học Q3 165,154,236,Đại học
+Cho_ThuDuc_166,Chợ truyền thống ThuDuc 166,156,219,Chợ truyền thống
+DH_Q7_167,Đại học Q7 167,417,338,Đại học
+TTTM_Q7_168,TTTM Q7 168,425,63,TTTM
+BV_BinhThanh_169,Y tế BinhThanh 169,430,398,Y tế
+VuiChoi_Q10_170,Vui chơi Q10 170,20,589,Vui chơi
+Cho_Q7_171,Chợ truyền thống Q7 171,6,360,Chợ truyền thống
+CongVien_BinhThanh_172,Công viên BinhThanh 172,399,429,Công viên
+TTTM_ThuDuc_173,TTTM ThuDuc 173,559,225,TTTM
+Cho_Q3_174,Chợ truyền thống Q3 174,279,446,Chợ truyền thống
+Cho_Q1_175,Chợ truyền thống Q1 175,398,344,Chợ truyền thống
+DT_ThuDuc_176,Di tích lịch sử ThuDuc 176,414,169,Di tích lịch sử
+VuiChoi_Q7_177,Vui chơi Q7 177,130,546,Vui chơi
+DH_Q7_178,Đại học Q7 178,577,27,Đại học
+DH_ThuDuc_179,Đại học ThuDuc 179,438,138,Đại học
+VuiChoi_Q7_180,Vui chơi Q7 180,186,51,Vui chơi
+CongVien_Q7_181,Công viên Q7 181,335,216,Công viên
+Cho_Q5_182,Chợ truyền thống Q5 182,345,388,Chợ truyền thống
+CongVien_BinhThanh_183,Công viên BinhThanh 183,431,258,Công viên
+VuiChoi_Q1_184,Vui chơi Q1 184,481,19,Vui chơi
+DT_Q10_185,Di tích lịch sử Q10 185,53,358,Di tích lịch sử
+BV_ThuDuc_186,Y tế ThuDuc 186,70,41,Y tế
+VuiChoi_Q1_187,Vui chơi Q1 187,253,204,Vui chơi
+VuiChoi_Q1_188,Vui chơi Q1 188,156,244,Vui chơi
+BV_Q7_189,Y tế Q7 189,117,577,Y tế
+BV_Q7_190,Y tế Q7 190,262,377,Y tế
+BV_Q10_191,Y tế Q10 191,117,167,Y tế
+CongVien_Q1_192,Công viên Q1 192,592,26,Công viên
+CongVien_Q10_193,Công viên Q10 193,384,406,Công viên
+DT_Q3_194,Di tích lịch sử Q3 194,77,248,Di tích lịch sử
+DH_ThuDuc_195,Đại học ThuDuc 195,308,123,Đại học
+VuiChoi_Q10_196,Vui chơi Q10 196,42,355,Vui chơi
+TTTM_Q7_197,TTTM Q7 197,379,70,TTTM
+TTTM_ThuDuc_198,TTTM ThuDuc 198,349,12,TTTM
+VuiChoi_Q7_199,Vui chơi Q7 199,501,108,Vui chơi
+Cho_Q5_200,Chợ truyền thống Q5 200,470,156,Chợ truyền thống
+Cho_Q3_201,Chợ truyền thống Q3 201,534,276,Chợ truyền thống
+TTTM_BinhThanh_202,TTTM BinhThanh 202,551,495,TTTM
+Cho_Q7_203,Chợ truyền thống Q7 203,274,330,Chợ truyền thống
+VuiChoi_Q3_204,Vui chơi Q3 204,88,285,Vui chơi
+Cho_Q3_205,Chợ truyền thống Q3 205,475,583,Chợ truyền thống
+TTTM_ThuDuc_206,TTTM ThuDuc 206,388,344,TTTM
+DH_Q7_207,Đại học Q7 207,332,186,Đại học
+Cho_Q3_208,Chợ truyền thống Q3 208,363,264,Chợ truyền thống
+CongVien_Q5_209,Công viên Q5 209,282,569,Công viên
+DH_Q10_210,Đại học Q10 210,195,87,Đại học
+BV_ThuDuc_211,Y tế ThuDuc 211,416,500,Y tế
+TTTM_BinhThanh_212,TTTM BinhThanh 212,246,487,TTTM
+DT_ThuDuc_213,Di tích lịch sử ThuDuc 213,502,458,Di tích lịch sử
+VuiChoi_Q1_214,Vui chơi Q1 214,95,301,Vui chơi
+BV_Q7_215,Y tế Q7 215,249,313,Y tế
+DT_Q10_216,Di tích lịch sử Q10 216,377,484,Di tích lịch sử
+TTTM_Q10_217,TTTM Q10 217,352,435,TTTM
+DT_Q10_218,Di tích lịch sử Q10 218,338,360,Di tích lịch sử
+DT_Q7_219,Di tích lịch sử Q7 219,277,313,Di tích lịch sử
+CongVien_Q3_220,Công viên Q3 220,123,197,Công viên
+CongVien_Q1_221,Công viên Q1 221,548,189,Công viên
+BV_Q3_222,Y tế Q3 222,495,283,Y tế
+DT_Q10_223,Di tích lịch sử Q10 223,537,289,Di tích lịch sử
+DH_BinhThanh_224,Đại học BinhThanh 224,198,303,Đại học
+BV_Q5_225,Y tế Q5 225,183,309,Y tế
+DH_ThuDuc_226,Đại học ThuDuc 226,546,129,Đại học
+CongVien_Q1_227,Công viên Q1 227,55,566,Công viên
+CongVien_ThuDuc_228,Công viên ThuDuc 228,129,502,Công viên
+DH_BinhThanh_229,Đại học BinhThanh 229,12,587,Đại học
+CongVien_Q7_230,Công viên Q7 230,490,451,Công viên
+CongVien_Q3_231,Công viên Q3 231,52,258,Công viên
+VuiChoi_Q7_232,Vui chơi Q7 232,116,66,Vui chơi
+Cho_Q7_233,Chợ truyền thống Q7 233,75,590,Chợ truyền thống
+DT_ThuDuc_234,Di tích lịch sử ThuDuc 234,54,155,Di tích lịch sử
+BV_BinhThanh_235,Y tế BinhThanh 235,576,311,Y tế
+DH_Q3_236,Đại học Q3 236,121,571,Đại học
+VuiChoi_Q7_237,Vui chơi Q7 237,231,535,Vui chơi
+Cho_Q7_238,Chợ truyền thống Q7 238,453,304,Chợ truyền thống
+VuiChoi_Q10_239,Vui chơi Q10 239,439,312,Vui chơi
+TTTM_Q10_240,TTTM Q10 240,61,101,TTTM
+VuiChoi_Q3_241,Vui chơi Q3 241,216,270,Vui chơi
+DT_Q1_242,Di tích lịch sử Q1 242,160,245,Di tích lịch sử
+BV_Q10_243,Y tế Q10 243,76,160,Y tế
+DH_Q7_244,Đại học Q7 244,461,481,Đại học
+CongVien_Q1_245,Công viên Q1 245,237,295,Công viên
+DT_Q5_246,Di tích lịch sử Q5 246,464,72,Di tích lịch sử
+DT_Q3_247,Di tích lịch sử Q3 247,270,202,Di tích lịch sử
+Cho_Q1_248,Chợ truyền thống Q1 248,557,230,Chợ truyền thống
+DT_Q3_249,Di tích lịch sử Q3 249,272,145,Di tích lịch sử
+DH_Q1_250,Đại học Q1 250,169,314,Đại học
+TTTM_ThuDuc_251,TTTM ThuDuc 251,582,295,TTTM
+Cho_Q1_252,Chợ truyền thống Q1 252,479,311,Chợ truyền thống
+DT_Q7_253,Di tích lịch sử Q7 253,278,512,Di tích lịch sử
+TTTM_Q7_254,TTTM Q7 254,448,82,TTTM
+TTTM_Q1_255,TTTM Q1 255,442,330,TTTM
+TTTM_Q5_256,TTTM Q5 256,26,93,TTTM
+BV_ThuDuc_257,Y tế ThuDuc 257,589,21,Y tế
+VuiChoi_ThuDuc_258,Vui chơi ThuDuc 258,275,590,Vui chơi
+DH_BinhThanh_259,Đại học BinhThanh 259,179,481,Đại học
+TTTM_ThuDuc_260,TTTM ThuDuc 260,452,284,TTTM
+BV_Q10_261,Y tế Q10 261,446,503,Y tế
+DH_Q7_262,Đại học Q7 262,356,418,Đại học
+CongVien_Q5_263,Công viên Q5 263,107,164,Công viên
+CongVien_Q7_264,Công viên Q7 264,507,295,Công viên
+DT_Q7_265,Di tích lịch sử Q7 265,563,37,Di tích lịch sử
+Cho_Q1_266,Chợ truyền thống Q1 266,322,258,Chợ truyền thống
+CongVien_Q1_267,Công viên Q1 267,413,526,Công viên
+VuiChoi_Q1_268,Vui chơi Q1 268,555,473,Vui chơi
+Cho_Q1_269,Chợ truyền thống Q1 269,192,530,Chợ truyền thống
+CongVien_Q10_270,Công viên Q10 270,510,452,Công viên
+VuiChoi_Q1_271,Vui chơi Q1 271,208,273,Vui chơi
+TTTM_Q3_272,TTTM Q3 272,294,448,TTTM
+DT_Q7_273,Di tích lịch sử Q7 273,124,29,Di tích lịch sử
+DT_Q10_274,Di tích lịch sử Q10 274,245,162,Di tích lịch sử
+CongVien_Q10_275,Công viên Q10 275,14,565,Công viên
+Cho_Q1_276,Chợ truyền thống Q1 276,230,116,Chợ truyền thống
+Cho_Q1_277,Chợ truyền thống Q1 277,157,510,Chợ truyền thống
+DT_Q5_278,Di tích lịch sử Q5 278,521,279,Di tích lịch sử
+Cho_BinhThanh_279,Chợ truyền thống BinhThanh 279,494,483,Chợ truyền thống
+BV_Q7_280,Y tế Q7 280,564,148,Y tế
+Cho_Q3_281,Chợ truyền thống Q3 281,520,139,Chợ truyền thống
+VuiChoi_Q1_282,Vui chơi Q1 282,282,424,Vui chơi
+CongVien_BinhThanh_283,Công viên BinhThanh 283,519,273,Công viên
+VuiChoi_Q1_284,Vui chơi Q1 284,289,305,Vui chơi
+VuiChoi_Q10_285,Vui chơi Q10 285,593,501,Vui chơi
+VuiChoi_Q3_286,Vui chơi Q3 286,457,551,Vui chơi
+Cho_Q5_287,Chợ truyền thống Q5 287,340,565,Chợ truyền thống
+VuiChoi_Q10_288,Vui chơi Q10 288,386,466,Vui chơi
+CongVien_BinhThanh_289,Công viên BinhThanh 289,193,244,Công viên
+TTTM_Q7_290,TTTM Q7 290,239,420,TTTM
+DH_Q5_291,Đại học Q5 291,484,390,Đại học
+Cho_ThuDuc_292,Chợ truyền thống ThuDuc 292,155,507,Chợ truyền thống
+DH_Q3_293,Đại học Q3 293,514,339,Đại học
+VuiChoi_Q1_294,Vui chơi Q1 294,450,102,Vui chơi
+TTTM_Q7_295,TTTM Q7 295,15,147,TTTM
+Cho_BinhThanh_296,Chợ truyền thống BinhThanh 296,158,76,Chợ truyền thống
+Cho_BinhThanh_297,Chợ truyền thống BinhThanh 297,271,346,Chợ truyền thống
+TTTM_ThuDuc_298,TTTM ThuDuc 298,407,82,TTTM
+VuiChoi_Q5_299,Vui chơi Q5 299,546,389,Vui chơi
+CongVien_ThuDuc_300,Công viên ThuDuc 300,499,554,Công viên
+DH_Q10_301,Đại học Q10 301,70,240,Đại học
+DT_ThuDuc_302,Di tích lịch sử ThuDuc 302,294,232,Di tích lịch sử
+DT_Q1_303,Di tích lịch sử Q1 303,444,100,Di tích lịch sử
+VuiChoi_ThuDuc_304,Vui chơi ThuDuc 304,102,454,Vui chơi
+BV_ThuDuc_305,Y tế ThuDuc 305,306,29,Y tế
+DH_Q5_306,Đại học Q5 306,57,300,Đại học
+CongVien_Q5_307,Công viên Q5 307,441,149,Công viên
+BV_Q10_308,Y tế Q10 308,421,579,Y tế
+DT_BinhThanh_309,Di tích lịch sử BinhThanh 309,184,174,Di tích lịch sử
+BV_Q1_310,Y tế Q1 310,391,246,Y tế
+Cho_Q10_311,Chợ truyền thống Q10 311,146,237,Chợ truyền thống
+Cho_ThuDuc_312,Chợ truyền thống ThuDuc 312,260,470,Chợ truyền thống
+CongVien_ThuDuc_313,Công viên ThuDuc 313,9,476,Công viên
+CongVien_ThuDuc_314,Công viên ThuDuc 314,559,161,Công viên
+DH_Q7_315,Đại học Q7 315,353,306,Đại học
+DT_Q7_316,Di tích lịch sử Q7 316,256,467,Di tích lịch sử
+VuiChoi_Q5_317,Vui chơi Q5 317,203,393,Vui chơi
+VuiChoi_Q7_318,Vui chơi Q7 318,109,242,Vui chơi
+Cho_Q10_319,Chợ truyền thống Q10 319,367,588,Chợ truyền thống
+CongVien_ThuDuc_320,Công viên ThuDuc 320,302,22,Công viên
+VuiChoi_ThuDuc_321,Vui chơi ThuDuc 321,405,281,Vui chơi
+DH_Q10_322,Đại học Q10 322,50,508,Đại học
+VuiChoi_Q5_323,Vui chơi Q5 323,235,360,Vui chơi
+BV_ThuDuc_324,Y tế ThuDuc 324,194,256,Y tế
+DT_BinhThanh_325,Di tích lịch sử BinhThanh 325,140,99,Di tích lịch sử
+DT_ThuDuc_326,Di tích lịch sử ThuDuc 326,40,316,Di tích lịch sử
+VuiChoi_Q7_327,Vui chơi Q7 327,34,593,Vui chơi
+CongVien_ThuDuc_328,Công viên ThuDuc 328,134,92,Công viên
+CongVien_Q5_329,Công viên Q5 329,425,179,Công viên
+BV_Q3_330,Y tế Q3 330,552,374,Y tế
+TTTM_Q10_331,TTTM Q10 331,279,168,TTTM
+CongVien_BinhThanh_332,Công viên BinhThanh 332,493,302,Công viên
+DT_BinhThanh_333,Di tích lịch sử BinhThanh 333,346,117,Di tích lịch sử
+Cho_Q1_334,Chợ truyền thống Q1 334,144,231,Chợ truyền thống
+VuiChoi_ThuDuc_335,Vui chơi ThuDuc 335,406,570,Vui chơi
+CongVien_Q1_336,Công viên Q1 336,404,14,Công viên
+CongVien_Q10_337,Công viên Q10 337,126,465,Công viên
+CongVien_ThuDuc_338,Công viên ThuDuc 338,268,598,Công viên
+Cho_BinhThanh_339,Chợ truyền thống BinhThanh 339,380,110,Chợ truyền thống
+DT_Q3_340,Di tích lịch sử Q3 340,482,25,Di tích lịch sử
+TTTM_Q10_341,TTTM Q10 341,335,226,TTTM
+DT_Q1_342,Di tích lịch sử Q1 342,475,309,Di tích lịch sử
+DT_Q7_343,Di tích lịch sử Q7 343,119,143,Di tích lịch sử
+DH_Q1_344,Đại học Q1 344,311,504,Đại học
+DH_Q1_345,Đại học Q1 345,240,550,Đại học
+BV_Q7_346,Y tế Q7 346,464,379,Y tế
+DT_ThuDuc_347,Di tích lịch sử ThuDuc 347,553,429,Di tích lịch sử
+TTTM_ThuDuc_348,TTTM ThuDuc 348,158,424,TTTM
+DT_Q1_349,Di tích lịch sử Q1 349,501,417,Di tích lịch sử
+CongVien_Q1_350,Công viên Q1 350,379,222,Công viên
+Cho_Q7_351,Chợ truyền thống Q7 351,241,371,Chợ truyền thống
+DH_ThuDuc_352,Đại học ThuDuc 352,376,557,Đại học
+DT_Q5_353,Di tích lịch sử Q5 353,62,407,Di tích lịch sử
+CongVien_Q3_354,Công viên Q3 354,125,465,Công viên
+DH_ThuDuc_355,Đại học ThuDuc 355,217,21,Đại học
+DH_BinhThanh_356,Đại học BinhThanh 356,341,249,Đại học
+BV_BinhThanh_357,Y tế BinhThanh 357,578,210,Y tế
+DH_BinhThanh_358,Đại học BinhThanh 358,567,212,Đại học
+TTTM_Q3_359,TTTM Q3 359,238,336,TTTM
+VuiChoi_Q3_360,Vui chơi Q3 360,2,283,Vui chơi
+VuiChoi_Q3_361,Vui chơi Q3 361,133,553,Vui chơi
+CongVien_BinhThanh_362,Công viên BinhThanh 362,178,112,Công viên
+DT_BinhThanh_363,Di tích lịch sử BinhThanh 363,26,134,Di tích lịch sử
+DH_Q5_364,Đại học Q5 364,243,331,Đại học
+DH_Q3_365,Đại học Q3 365,271,53,Đại học
+BV_ThuDuc_366,Y tế ThuDuc 366,431,538,Y tế
+DH_ThuDuc_367,Đại học ThuDuc 367,65,487,Đại học
+Cho_BinhThanh_368,Chợ truyền thống BinhThanh 368,370,525,Chợ truyền thống
+TTTM_Q1_369,TTTM Q1 369,462,515,TTTM
+BV_Q10_370,Y tế Q10 370,44,533,Y tế
+CongVien_Q7_371,Công viên Q7 371,31,62,Công viên
+Cho_BinhThanh_372,Chợ truyền thống BinhThanh 372,411,436,Chợ truyền thống
+DT_Q1_373,Di tích lịch sử Q1 373,502,454,Di tích lịch sử
+DH_Q1_374,Đại học Q1 374,329,151,Đại học
+DH_Q3_375,Đại học Q3 375,281,599,Đại học
+TTTM_ThuDuc_376,TTTM ThuDuc 376,332,390,TTTM
+TTTM_Q10_377,TTTM Q10 377,301,464,TTTM
+TTTM_Q10_378,TTTM Q10 378,440,101,TTTM
+VuiChoi_ThuDuc_379,Vui chơi ThuDuc 379,117,564,Vui chơi
+DT_BinhThanh_380,Di tích lịch sử BinhThanh 380,220,440,Di tích lịch sử
+Cho_Q3_381,Chợ truyền thống Q3 381,423,347,Chợ truyền thống
+VuiChoi_Q7_382,Vui chơi Q7 382,408,425,Vui chơi
+DT_Q1_383,Di tích lịch sử Q1 383,320,437,Di tích lịch sử
+CongVien_ThuDuc_384,Công viên ThuDuc 384,261,383,Công viên
+BV_ThuDuc_385,Y tế ThuDuc 385,485,68,Y tế
+DH_BinhThanh_386,Đại học BinhThanh 386,87,95,Đại học
+Cho_Q1_387,Chợ truyền thống Q1 387,381,133,Chợ truyền thống
+TTTM_Q1_388,TTTM Q1 388,600,575,TTTM
+TTTM_Q5_389,TTTM Q5 389,125,420,TTTM
+CongVien_BinhThanh_390,Công viên BinhThanh 390,433,52,Công viên
+CongVien_Q10_391,Công viên Q10 391,319,360,Công viên
+DH_Q10_392,Đại học Q10 392,519,217,Đại học
+BV_ThuDuc_393,Y tế ThuDuc 393,493,229,Y tế
+VuiChoi_Q1_394,Vui chơi Q1 394,358,569,Vui chơi
+CongVien_Q1_395,Công viên Q1 395,285,587,Công viên
+BV_BinhThanh_396,Y tế BinhThanh 396,439,574,Y tế
+VuiChoi_BinhThanh_397,Vui chơi BinhThanh 397,570,26,Vui chơi
+TTTM_ThuDuc_398,TTTM ThuDuc 398,273,29,TTTM
+BV_Q5_399,Y tế Q5 399,316,347,Y tế
+CongVien_Q1_400,Công viên Q1 400,185,146,Công viên
+TTTM_ThuDuc_401,TTTM ThuDuc 401,410,71,TTTM
+BV_ThuDuc_402,Y tế ThuDuc 402,31,93,Y tế
+DT_Q10_403,Di tích lịch sử Q10 403,220,385,Di tích lịch sử
+Cho_Q7_404,Chợ truyền thống Q7 404,349,161,Chợ truyền thống
+CongVien_Q5_405,Công viên Q5 405,332,581,Công viên
+TTTM_Q1_406,TTTM Q1 406,53,159,TTTM
+BV_BinhThanh_407,Y tế BinhThanh 407,50,83,Y tế
+CongVien_Q7_408,Công viên Q7 408,434,497,Công viên
+TTTM_Q7_409,TTTM Q7 409,424,279,TTTM
+BV_BinhThanh_410,Y tế BinhThanh 410,524,116,Y tế
+CongVien_Q7_411,Công viên Q7 411,113,290,Công viên
+DT_ThuDuc_412,Di tích lịch sử ThuDuc 412,498,539,Di tích lịch sử
+DT_Q5_413,Di tích lịch sử Q5 413,46,225,Di tích lịch sử
+Cho_Q10_414,Chợ truyền thống Q10 414,56,7,Chợ truyền thống
+BV_Q5_415,Y tế Q5 415,216,140,Y tế
+VuiChoi_Q5_416,Vui chơi Q5 416,296,335,Vui chơi
+DH_Q1_417,Đại học Q1 417,509,440,Đại học
+BV_Q3_418,Y tế Q3 418,389,545,Y tế
+DT_Q3_419,Di tích lịch sử Q3 419,512,572,Di tích lịch sử
+VuiChoi_ThuDuc_420,Vui chơi ThuDuc 420,362,73,Vui chơi
+Cho_BinhThanh_421,Chợ truyền thống BinhThanh 421,43,446,Chợ truyền thống
+DH_Q7_422,Đại học Q7 422,79,320,Đại học
+TTTM_Q7_423,TTTM Q7 423,587,414,TTTM
+DT_ThuDuc_424,Di tích lịch sử ThuDuc 424,427,296,Di tích lịch sử
+DH_Q7_425,Đại học Q7 425,21,332,Đại học
+BV_BinhThanh_426,Y tế BinhThanh 426,471,370,Y tế
+DH_Q7_427,Đại học Q7 427,108,249,Đại học
+Cho_Q10_428,Chợ truyền thống Q10 428,410,536,Chợ truyền thống
+DH_Q7_429,Đại học Q7 429,317,347,Đại học
+BV_Q5_430,Y tế Q5 430,172,78,Y tế
+TTTM_ThuDuc_431,TTTM ThuDuc 431,116,543,TTTM
+TTTM_Q3_432,TTTM Q3 432,357,359,TTTM
+DT_BinhThanh_433,Di tích lịch sử BinhThanh 433,151,241,Di tích lịch sử
+DH_Q3_434,Đại học Q3 434,262,202,Đại học
+BV_Q10_435,Y tế Q10 435,156,77,Y tế
+BV_BinhThanh_436,Y tế BinhThanh 436,505,475,Y tế
+VuiChoi_Q10_437,Vui chơi Q10 437,593,459,Vui chơi
+DT_Q10_438,Di tích lịch sử Q10 438,330,323,Di tích lịch sử
+BV_Q7_439,Y tế Q7 439,69,480,Y tế
+Cho_ThuDuc_440,Chợ truyền thống ThuDuc 440,310,281,Chợ truyền thống
+TTTM_Q1_441,TTTM Q1 441,360,519,TTTM
+DH_Q5_442,Đại học Q5 442,472,462,Đại học
+DH_Q1_443,Đại học Q1 443,377,293,Đại học
+DH_ThuDuc_444,Đại học ThuDuc 444,92,519,Đại học
+Cho_Q7_445,Chợ truyền thống Q7 445,594,567,Chợ truyền thống
+VuiChoi_ThuDuc_446,Vui chơi ThuDuc 446,42,460,Vui chơi
+VuiChoi_Q10_447,Vui chơi Q10 447,192,329,Vui chơi
+TTTM_Q7_448,TTTM Q7 448,513,154,TTTM
+DH_Q7_449,Đại học Q7 449,105,351,Đại học
+DT_Q1_450,Di tích lịch sử Q1 450,516,176,Di tích lịch sử
+DH_Q3_451,Đại học Q3 451,448,449,Đại học
+TTTM_Q10_452,TTTM Q10 452,162,372,TTTM
+CongVien_Q5_453,Công viên Q5 453,396,418,Công viên
+VuiChoi_Q5_454,Vui chơi Q5 454,53,342,Vui chơi
+DH_Q5_455,Đại học Q5 455,96,571,Đại học
+DT_Q7_456,Di tích lịch sử Q7 456,290,258,Di tích lịch sử
+DT_BinhThanh_457,Di tích lịch sử BinhThanh 457,153,341,Di tích lịch sử
+DH_Q10_458,Đại học Q10 458,144,358,Đại học
+CongVien_ThuDuc_459,Công viên ThuDuc 459,401,132,Công viên
+TTTM_ThuDuc_460,TTTM ThuDuc 460,86,317,TTTM
+TTTM_Q7_461,TTTM Q7 461,336,130,TTTM
+DT_ThuDuc_462,Di tích lịch sử ThuDuc 462,539,95,Di tích lịch sử
+DT_ThuDuc_463,Di tích lịch sử ThuDuc 463,433,520,Di tích lịch sử
+CongVien_Q1_464,Công viên Q1 464,371,316,Công viên
+BV_Q3_465,Y tế Q3 465,349,497,Y tế
+BV_Q3_466,Y tế Q3 466,140,158,Y tế
+DH_Q5_467,Đại học Q5 467,103,519,Đại học
+VuiChoi_Q10_468,Vui chơi Q10 468,539,38,Vui chơi
+DT_Q5_469,Di tích lịch sử Q5 469,134,385,Di tích lịch sử
+BV_Q3_470,Y tế Q3 470,185,169,Y tế
+DT_Q7_471,Di tích lịch sử Q7 471,44,420,Di tích lịch sử
+CongVien_ThuDuc_472,Công viên ThuDuc 472,243,454,Công viên
+TTTM_Q5_473,TTTM Q5 473,459,239,TTTM
+TTTM_Q3_474,TTTM Q3 474,316,480,TTTM
+VuiChoi_Q3_475,Vui chơi Q3 475,376,584,Vui chơi
+Cho_Q7_476,Chợ truyền thống Q7 476,288,391,Chợ truyền thống
+TTTM_Q10_477,TTTM Q10 477,428,165,TTTM
+VuiChoi_Q3_478,Vui chơi Q3 478,141,256,Vui chơi
+DH_ThuDuc_479,Đại học ThuDuc 479,492,380,Đại học
+TTTM_Q1_480,TTTM Q1 480,528,127,TTTM
+CongVien_Q1_481,Công viên Q1 481,164,279,Công viên
+Cho_Q10_482,Chợ truyền thống Q10 482,150,447,Chợ truyền thống
+DH_Q3_483,Đại học Q3 483,461,357,Đại học
+DH_Q7_484,Đại học Q7 484,54,405,Đại học
+TTTM_Q5_485,TTTM Q5 485,241,395,TTTM
+DH_Q5_486,Đại học Q5 486,229,28,Đại học
+CongVien_Q1_487,Công viên Q1 487,343,149,Công viên
+BV_Q1_488,Y tế Q1 488,293,483,Y tế
+DT_BinhThanh_489,Di tích lịch sử BinhThanh 489,142,480,Di tích lịch sử
+Cho_Q10_490,Chợ truyền thống Q10 490,5,81,Chợ truyền thống
+DH_Q5_491,Đại học Q5 491,220,153,Đại học
+TTTM_ThuDuc_492,TTTM ThuDuc 492,540,433,TTTM
+DH_BinhThanh_493,Đại học BinhThanh 493,295,243,Đại học
+CongVien_Q1_494,Công viên Q1 494,48,244,Công viên
+Cho_ThuDuc_495,Chợ truyền thống ThuDuc 495,468,64,Chợ truyền thống
+DH_BinhThanh_496,Đại học BinhThanh 496,511,548,Đại học
+DH_ThuDuc_497,Đại học ThuDuc 497,527,588,Đại học
+BV_ThuDuc_498,Y tế ThuDuc 498,147,298,Y tế
+Cho_Q1_499,Chợ truyền thống Q1 499,361,246,Chợ truyền thống
+TTTM_Q7_500,TTTM Q7 500,191,87,TTTM
+TTTM_Q5_501,TTTM Q5 501,69,538,TTTM
+TTTM_Q10_502,TTTM Q10 502,519,567,TTTM
+DH_Q7_503,Đại học Q7 503,481,44,Đại học
+DT_Q7_504,Di tích lịch sử Q7 504,382,259,Di tích lịch sử
+DT_Q1_505,Di tích lịch sử Q1 505,365,69,Di tích lịch sử
+CongVien_Q3_506,Công viên Q3 506,106,595,Công viên
+DT_BinhThanh_507,Di tích lịch sử BinhThanh 507,340,136,Di tích lịch sử
+DH_Q5_508,Đại học Q5 508,559,346,Đại học
+VuiChoi_ThuDuc_509,Vui chơi ThuDuc 509,179,475,Vui chơi
+DT_Q7_510,Di tích lịch sử Q7 510,186,138,Di tích lịch sử
+DH_ThuDuc_511,Đại học ThuDuc 511,468,37,Đại học
+CongVien_Q3_512,Công viên Q3 512,44,204,Công viên
+DH_Q5_513,Đại học Q5 513,317,527,Đại học
+Cho_BinhThanh_514,Chợ truyền thống BinhThanh 514,556,484,Chợ truyền thống
+CongVien_Q1_515,Công viên Q1 515,195,292,Công viên
+CongVien_BinhThanh_516,Công viên BinhThanh 516,48,339,Công viên
+CongVien_Q1_517,Công viên Q1 517,376,447,Công viên
+Cho_ThuDuc_518,Chợ truyền thống ThuDuc 518,450,395,Chợ truyền thống
+CongVien_Q3_519,Công viên Q3 519,508,509,Công viên
+CongVien_BinhThanh_520,Công viên BinhThanh 520,531,273,Công viên
+VuiChoi_Q1_521,Vui chơi Q1 521,434,80,Vui chơi
+Cho_Q10_522,Chợ truyền thống Q10 522,184,558,Chợ truyền thống
+CongVien_Q5_523,Công viên Q5 523,105,81,Công viên
+CongVien_ThuDuc_524,Công viên ThuDuc 524,302,313,Công viên
+Cho_Q10_525,Chợ truyền thống Q10 525,436,170,Chợ truyền thống
+DT_Q7_526,Di tích lịch sử Q7 526,359,457,Di tích lịch sử
+DH_ThuDuc_527,Đại học ThuDuc 527,361,445,Đại học
+CongVien_ThuDuc_528,Công viên ThuDuc 528,58,76,Công viên
+DT_ThuDuc_529,Di tích lịch sử ThuDuc 529,415,372,Di tích lịch sử
+TTTM_BinhThanh_530,TTTM BinhThanh 530,163,31,TTTM
+BV_BinhThanh_531,Y tế BinhThanh 531,448,35,Y tế
+BV_Q1_532,Y tế Q1 532,241,375,Y tế
+CongVien_Q7_533,Công viên Q7 533,580,33,Công viên
+TTTM_Q3_534,TTTM Q3 534,460,379,TTTM
+CongVien_Q7_535,Công viên Q7 535,78,587,Công viên
+BV_Q10_536,Y tế Q10 536,375,407,Y tế
+CongVien_ThuDuc_537,Công viên ThuDuc 537,285,255,Công viên
+DH_Q1_538,Đại học Q1 538,190,511,Đại học
+TTTM_Q7_539,TTTM Q7 539,575,120,TTTM
+CongVien_BinhThanh_540,Công viên BinhThanh 540,266,456,Công viên
+BV_Q10_541,Y tế Q10 541,292,502,Y tế
+BV_Q1_542,Y tế Q1 542,138,75,Y tế
+Cho_Q3_543,Chợ truyền thống Q3 543,455,89,Chợ truyền thống
+VuiChoi_ThuDuc_544,Vui chơi ThuDuc 544,327,355,Vui chơi
+DT_Q1_545,Di tích lịch sử Q1 545,563,555,Di tích lịch sử
+CongVien_Q5_546,Công viên Q5 546,161,178,Công viên
+VuiChoi_Q5_547,Vui chơi Q5 547,520,229,Vui chơi
+DH_Q3_548,Đại học Q3 548,142,242,Đại học
+VuiChoi_Q7_549,Vui chơi Q7 549,26,369,Vui chơi
+TTTM_Q10_550,TTTM Q10 550,377,478,TTTM
+VuiChoi_Q10_551,Vui chơi Q10 551,132,88,Vui chơi
+DH_Q5_552,Đại học Q5 552,407,490,Đại học
+TTTM_Q7_553,TTTM Q7 553,419,588,TTTM
+DH_Q3_554,Đại học Q3 554,324,75,Đại học
+Cho_Q7_555,Chợ truyền thống Q7 555,529,352,Chợ truyền thống
+BV_BinhThanh_556,Y tế BinhThanh 556,564,186,Y tế
+VuiChoi_Q3_557,Vui chơi Q3 557,443,514,Vui chơi
+VuiChoi_Q1_558,Vui chơi Q1 558,127,530,Vui chơi
+BV_Q5_559,Y tế Q5 559,168,165,Y tế
+CongVien_ThuDuc_560,Công viên ThuDuc 560,230,354,Công viên
+TTTM_Q5_561,TTTM Q5 561,80,256,TTTM
+BV_ThuDuc_562,Y tế ThuDuc 562,564,281,Y tế
+BV_ThuDuc_563,Y tế ThuDuc 563,310,546,Y tế
+DH_Q10_564,Đại học Q10 564,172,594,Đại học
+BV_Q3_565,Y tế Q3 565,345,577,Y tế
+DH_BinhThanh_566,Đại học BinhThanh 566,29,83,Đại học
+DH_ThuDuc_567,Đại học ThuDuc 567,590,271,Đại học
+DT_Q3_568,Di tích lịch sử Q3 568,585,426,Di tích lịch sử
+TTTM_ThuDuc_569,TTTM ThuDuc 569,31,509,TTTM
+DT_Q10_570,Di tích lịch sử Q10 570,296,309,Di tích lịch sử
+Cho_Q3_571,Chợ truyền thống Q3 571,415,304,Chợ truyền thống
+Cho_Q1_572,Chợ truyền thống Q1 572,61,161,Chợ truyền thống
+Cho_Q7_573,Chợ truyền thống Q7 573,495,475,Chợ truyền thống
+BV_Q5_574,Y tế Q5 574,147,320,Y tế
+VuiChoi_ThuDuc_575,Vui chơi ThuDuc 575,326,353,Vui chơi
+Cho_Q3_576,Chợ truyền thống Q3 576,379,527,Chợ truyền thống
+TTTM_Q1_577,TTTM Q1 577,326,247,TTTM
+Cho_Q1_578,Chợ truyền thống Q1 578,273,460,Chợ truyền thống
+BV_Q3_579,Y tế Q3 579,99,51,Y tế
+CongVien_Q7_580,Công viên Q7 580,428,254,Công viên
+VuiChoi_Q3_581,Vui chơi Q3 581,335,591,Vui chơi
+DT_Q5_582,Di tích lịch sử Q5 582,194,163,Di tích lịch sử
+Cho_Q10_583,Chợ truyền thống Q10 583,478,510,Chợ truyền thống
+CongVien_Q7_584,Công viên Q7 584,23,92,Công viên
+Cho_Q10_585,Chợ truyền thống Q10 585,468,246,Chợ truyền thống
+BV_Q10_586,Y tế Q10 586,361,49,Y tế
+DH_Q5_587,Đại học Q5 587,506,481,Đại học
+CongVien_Q10_588,Công viên Q10 588,8,110,Công viên
+Cho_Q3_589,Chợ truyền thống Q3 589,270,374,Chợ truyền thống
+VuiChoi_Q7_590,Vui chơi Q7 590,374,46,Vui chơi
+Cho_Q1_591,Chợ truyền thống Q1 591,583,575,Chợ truyền thống
+BV_Q5_592,Y tế Q5 592,566,295,Y tế
+DH_Q7_593,Đại học Q7 593,516,461,Đại học
+VuiChoi_Q10_594,Vui chơi Q10 594,286,121,Vui chơi
+BV_Q1_595,Y tế Q1 595,403,382,Y tế
+VuiChoi_Q5_596,Vui chơi Q5 596,571,374,Vui chơi
+VuiChoi_Q3_597,Vui chơi Q3 597,203,521,Vui chơi
+Cho_Q10_598,Chợ truyền thống Q10 598,41,46,Chợ truyền thống
+DH_Q3_599,Đại học Q3 599,341,485,Đại học
+TTTM_Q7_600,TTTM Q7 600,152,527,TTTM
+BV_Q5_601,Y tế Q5 601,326,166,Y tế
+Cho_Q10_602,Chợ truyền thống Q10 602,306,344,Chợ truyền thống
+TTTM_BinhThanh_603,TTTM BinhThanh 603,521,545,TTTM
+Cho_ThuDuc_604,Chợ truyền thống ThuDuc 604,576,306,Chợ truyền thống
+Cho_BinhThanh_605,Chợ truyền thống BinhThanh 605,17,377,Chợ truyền thống
+CongVien_ThuDuc_606,Công viên ThuDuc 606,112,426,Công viên
+TTTM_Q5_607,TTTM Q5 607,27,485,TTTM
+CongVien_ThuDuc_608,Công viên ThuDuc 608,592,591,Công viên
+BV_ThuDuc_609,Y tế ThuDuc 609,52,597,Y tế
+Cho_Q3_610,Chợ truyền thống Q3 610,536,389,Chợ truyền thống
+BV_BinhThanh_611,Y tế BinhThanh 611,248,32,Y tế
+TTTM_ThuDuc_612,TTTM ThuDuc 612,112,195,TTTM
+DH_Q7_613,Đại học Q7 613,321,428,Đại học
+BV_Q7_614,Y tế Q7 614,208,420,Y tế
+TTTM_BinhThanh_615,TTTM BinhThanh 615,482,63,TTTM
+DT_Q3_616,Di tích lịch sử Q3 616,531,212,Di tích lịch sử
+TTTM_Q5_617,TTTM Q5 617,489,538,TTTM
+Cho_Q5_618,Chợ truyền thống Q5 618,177,470,Chợ truyền thống
+TTTM_Q5_619,TTTM Q5 619,559,362,TTTM
+DT_BinhThanh_620,Di tích lịch sử BinhThanh 620,270,495,Di tích lịch sử
+BV_Q3_621,Y tế Q3 621,285,571,Y tế
+CongVien_Q3_622,Công viên Q3 622,304,295,Công viên
+DT_Q3_623,Di tích lịch sử Q3 623,500,324,Di tích lịch sử
+Cho_Q5_624,Chợ truyền thống Q5 624,573,280,Chợ truyền thống
+CongVien_Q1_625,Công viên Q1 625,587,556,Công viên
+Cho_Q7_626,Chợ truyền thống Q7 626,353,149,Chợ truyền thống
+CongVien_Q1_627,Công viên Q1 627,294,80,Công viên
+CongVien_Q7_628,Công viên Q7 628,262,490,Công viên
+BV_Q3_629,Y tế Q3 629,551,277,Y tế
+TTTM_ThuDuc_630,TTTM ThuDuc 630,278,140,TTTM
+DH_Q10_631,Đại học Q10 631,600,245,Đại học
+BV_Q1_632,Y tế Q1 632,543,231,Y tế
+DT_Q3_633,Di tích lịch sử Q3 633,53,102,Di tích lịch sử
+Cho_Q5_634,Chợ truyền thống Q5 634,483,102,Chợ truyền thống
+DT_BinhThanh_635,Di tích lịch sử BinhThanh 635,140,5,Di tích lịch sử
+TTTM_Q3_636,TTTM Q3 636,416,487,TTTM
+Cho_ThuDuc_637,Chợ truyền thống ThuDuc 637,204,294,Chợ truyền thống
+CongVien_Q5_638,Công viên Q5 638,60,91,Công viên
+DT_Q10_639,Di tích lịch sử Q10 639,237,547,Di tích lịch sử
+DT_ThuDuc_640,Di tích lịch sử ThuDuc 640,38,179,Di tích lịch sử
+Cho_BinhThanh_641,Chợ truyền thống BinhThanh 641,180,37,Chợ truyền thống
+VuiChoi_Q7_642,Vui chơi Q7 642,507,190,Vui chơi
+DT_BinhThanh_643,Di tích lịch sử BinhThanh 643,296,38,Di tích lịch sử
+DH_Q5_644,Đại học Q5 644,581,109,Đại học
+CongVien_Q5_645,Công viên Q5 645,465,556,Công viên
+TTTM_Q7_646,TTTM Q7 646,137,516,TTTM
+Cho_Q5_647,Chợ truyền thống Q5 647,197,115,Chợ truyền thống
+CongVien_Q3_648,Công viên Q3 648,469,263,Công viên
+DT_Q3_649,Di tích lịch sử Q3 649,14,345,Di tích lịch sử
+VuiChoi_Q5_650,Vui chơi Q5 650,581,197,Vui chơi
+BV_Q10_651,Y tế Q10 651,415,437,Y tế
+TTTM_Q5_652,TTTM Q5 652,88,410,TTTM
+DT_Q1_653,Di tích lịch sử Q1 653,189,143,Di tích lịch sử
+Cho_Q5_654,Chợ truyền thống Q5 654,254,6,Chợ truyền thống
+CongVien_Q7_655,Công viên Q7 655,241,457,Công viên
+VuiChoi_Q5_656,Vui chơi Q5 656,337,309,Vui chơi
+TTTM_ThuDuc_657,TTTM ThuDuc 657,586,11,TTTM
+CongVien_ThuDuc_658,Công viên ThuDuc 658,368,241,Công viên
+DH_ThuDuc_659,Đại học ThuDuc 659,121,476,Đại học
+CongVien_Q3_660,Công viên Q3 660,415,514,Công viên
+DT_BinhThanh_661,Di tích lịch sử BinhThanh 661,318,120,Di tích lịch sử
+DT_Q5_662,Di tích lịch sử Q5 662,376,226,Di tích lịch sử
+BV_Q3_663,Y tế Q3 663,489,156,Y tế
+Cho_ThuDuc_664,Chợ truyền thống ThuDuc 664,382,425,Chợ truyền thống
+DT_Q10_665,Di tích lịch sử Q10 665,482,550,Di tích lịch sử
+VuiChoi_ThuDuc_666,Vui chơi ThuDuc 666,223,253,Vui chơi
+DT_BinhThanh_667,Di tích lịch sử BinhThanh 667,83,538,Di tích lịch sử
+Cho_Q10_668,Chợ truyền thống Q10 668,370,79,Chợ truyền thống
+TTTM_Q1_669,TTTM Q1 669,63,560,TTTM
+TTTM_Q3_670,TTTM Q3 670,586,549,TTTM
+BV_Q3_671,Y tế Q3 671,335,532,Y tế
+Cho_Q1_672,Chợ truyền thống Q1 672,210,597,Chợ truyền thống
+Cho_Q1_673,Chợ truyền thống Q1 673,522,456,Chợ truyền thống
+VuiChoi_Q1_674,Vui chơi Q1 674,464,135,Vui chơi
+TTTM_Q7_675,TTTM Q7 675,467,577,TTTM
+DH_Q10_676,Đại học Q10 676,473,315,Đại học
+DT_Q1_677,Di tích lịch sử Q1 677,405,260,Di tích lịch sử
+VuiChoi_Q1_678,Vui chơi Q1 678,223,592,Vui chơi
+DH_Q1_679,Đại học Q1 679,433,352,Đại học
+DT_Q1_680,Di tích lịch sử Q1 680,554,61,Di tích lịch sử
+DH_Q7_681,Đại học Q7 681,32,293,Đại học
+Cho_Q3_682,Chợ truyền thống Q3 682,138,430,Chợ truyền thống
+CongVien_Q7_683,Công viên Q7 683,459,386,Công viên
+Cho_Q1_684,Chợ truyền thống Q1 684,552,136,Chợ truyền thống
+DT_BinhThanh_685,Di tích lịch sử BinhThanh 685,356,121,Di tích lịch sử
+BV_Q10_686,Y tế Q10 686,402,541,Y tế
+BV_ThuDuc_687,Y tế ThuDuc 687,228,3,Y tế
+VuiChoi_Q1_688,Vui chơi Q1 688,305,474,Vui chơi
+DT_ThuDuc_689,Di tích lịch sử ThuDuc 689,557,434,Di tích lịch sử
+TTTM_Q7_690,TTTM Q7 690,235,253,TTTM
+Cho_Q5_691,Chợ truyền thống Q5 691,158,282,Chợ truyền thống
+BV_ThuDuc_692,Y tế ThuDuc 692,115,32,Y tế
+VuiChoi_ThuDuc_693,Vui chơi ThuDuc 693,429,16,Vui chơi
+BV_Q3_694,Y tế Q3 694,68,103,Y tế
+TTTM_Q1_695,TTTM Q1 695,457,49,TTTM
+BV_ThuDuc_696,Y tế ThuDuc 696,45,411,Y tế
+Cho_Q3_697,Chợ truyền thống Q3 697,552,222,Chợ truyền thống
+VuiChoi_BinhThanh_698,Vui chơi BinhThanh 698,57,143,Vui chơi
+TTTM_Q5_699,TTTM Q5 699,239,589,TTTM
+CongVien_Q10_700,Công viên Q10 700,328,242,Công viên
+CongVien_Q3_701,Công viên Q3 701,533,226,Công viên
+Cho_Q5_702,Chợ truyền thống Q5 702,281,62,Chợ truyền thống
+TTTM_Q10_703,TTTM Q10 703,179,437,TTTM
+TTTM_Q7_704,TTTM Q7 704,48,352,TTTM
+DT_ThuDuc_705,Di tích lịch sử ThuDuc 705,390,537,Di tích lịch sử
+CongVien_ThuDuc_706,Công viên ThuDuc 706,426,418,Công viên
+BV_Q5_707,Y tế Q5 707,385,188,Y tế
+VuiChoi_Q10_708,Vui chơi Q10 708,484,246,Vui chơi
+VuiChoi_Q3_709,Vui chơi Q3 709,307,147,Vui chơi
+VuiChoi_Q7_710,Vui chơi Q7 710,59,575,Vui chơi
+Cho_Q7_711,Chợ truyền thống Q7 711,570,542,Chợ truyền thống
+BV_Q7_712,Y tế Q7 712,248,261,Y tế
+BV_Q5_713,Y tế Q5 713,80,460,Y tế
+VuiChoi_Q5_714,Vui chơi Q5 714,94,548,Vui chơi
+DT_BinhThanh_715,Di tích lịch sử BinhThanh 715,195,52,Di tích lịch sử
+CongVien_Q7_716,Công viên Q7 716,40,74,Công viên
+BV_BinhThanh_717,Y tế BinhThanh 717,572,222,Y tế
+Cho_Q3_718,Chợ truyền thống Q3 718,340,310,Chợ truyền thống
+DH_Q3_719,Đại học Q3 719,194,120,Đại học
+DT_BinhThanh_720,Di tích lịch sử BinhThanh 720,490,248,Di tích lịch sử
+DT_Q10_721,Di tích lịch sử Q10 721,209,406,Di tích lịch sử
+BV_Q10_722,Y tế Q10 722,329,289,Y tế
+Cho_Q7_723,Chợ truyền thống Q7 723,546,367,Chợ truyền thống
+CongVien_Q5_724,Công viên Q5 724,368,525,Công viên
+Cho_Q7_725,Chợ truyền thống Q7 725,100,480,Chợ truyền thống
+VuiChoi_BinhThanh_726,Vui chơi BinhThanh 726,327,208,Vui chơi
+CongVien_Q5_727,Công viên Q5 727,423,46,Công viên
+TTTM_BinhThanh_728,TTTM BinhThanh 728,226,149,TTTM
+DH_Q5_729,Đại học Q5 729,566,598,Đại học
+TTTM_ThuDuc_730,TTTM ThuDuc 730,427,302,TTTM
+BV_Q3_731,Y tế Q3 731,337,235,Y tế
+Cho_Q10_732,Chợ truyền thống Q10 732,251,511,Chợ truyền thống
+TTTM_ThuDuc_733,TTTM ThuDuc 733,345,263,TTTM
+VuiChoi_BinhThanh_734,Vui chơi BinhThanh 734,500,502,Vui chơi
+Cho_Q3_735,Chợ truyền thống Q3 735,360,173,Chợ truyền thống
+BV_ThuDuc_736,Y tế ThuDuc 736,559,500,Y tế
+BV_Q10_737,Y tế Q10 737,60,536,Y tế
+DH_BinhThanh_738,Đại học BinhThanh 738,76,49,Đại học
+VuiChoi_Q1_739,Vui chơi Q1 739,422,140,Vui chơi
+VuiChoi_ThuDuc_740,Vui chơi ThuDuc 740,236,69,Vui chơi
+DT_Q3_741,Di tích lịch sử Q3 741,9,223,Di tích lịch sử
+TTTM_Q7_742,TTTM Q7 742,382,61,TTTM
+TTTM_ThuDuc_743,TTTM ThuDuc 743,494,499,TTTM
+DH_Q1_744,Đại học Q1 744,544,564,Đại học
+Cho_Q1_745,Chợ truyền thống Q1 745,17,542,Chợ truyền thống
+DT_Q5_746,Di tích lịch sử Q5 746,548,293,Di tích lịch sử
+DH_Q10_747,Đại học Q10 747,440,183,Đại học
+DH_Q1_748,Đại học Q1 748,536,152,Đại học
+BV_Q3_749,Y tế Q3 749,539,258,Y tế
+VuiChoi_Q5_750,Vui chơi Q5 750,273,406,Vui chơi
+DH_Q5_751,Đại học Q5 751,415,470,Đại học
+TTTM_Q3_752,TTTM Q3 752,231,307,TTTM
+DT_BinhThanh_753,Di tích lịch sử BinhThanh 753,82,32,Di tích lịch sử
+DH_Q7_754,Đại học Q7 754,388,386,Đại học
+TTTM_Q7_755,TTTM Q7 755,57,9,TTTM
+DT_Q3_756,Di tích lịch sử Q3 756,84,511,Di tích lịch sử
+VuiChoi_Q7_757,Vui chơi Q7 757,339,579,Vui chơi
+VuiChoi_Q1_758,Vui chơi Q1 758,540,43,Vui chơi
+BV_Q3_759,Y tế Q3 759,580,486,Y tế
+CongVien_Q1_760,Công viên Q1 760,76,287,Công viên
+TTTM_Q10_761,TTTM Q10 761,33,183,TTTM
+VuiChoi_Q5_762,Vui chơi Q5 762,16,212,Vui chơi
+TTTM_Q3_763,TTTM Q3 763,407,78,TTTM
+CongVien_Q3_764,Công viên Q3 764,577,246,Công viên
+TTTM_BinhThanh_765,TTTM BinhThanh 765,398,553,TTTM
+CongVien_Q7_766,Công viên Q7 766,143,80,Công viên
+TTTM_ThuDuc_767,TTTM ThuDuc 767,354,54,TTTM
+DH_Q7_768,Đại học Q7 768,237,77,Đại học
+CongVien_Q10_769,Công viên Q10 769,406,334,Công viên
+DH_ThuDuc_770,Đại học ThuDuc 770,279,461,Đại học
+Cho_Q3_771,Chợ truyền thống Q3 771,364,566,Chợ truyền thống
+Cho_Q7_772,Chợ truyền thống Q7 772,190,599,Chợ truyền thống
+DT_Q7_773,Di tích lịch sử Q7 773,87,302,Di tích lịch sử
+VuiChoi_Q3_774,Vui chơi Q3 774,75,84,Vui chơi
+CongVien_Q3_775,Công viên Q3 775,389,157,Công viên
+DT_Q7_776,Di tích lịch sử Q7 776,324,369,Di tích lịch sử
+DH_Q1_777,Đại học Q1 777,5,315,Đại học
+Cho_Q5_778,Chợ truyền thống Q5 778,276,104,Chợ truyền thống
+BV_Q1_779,Y tế Q1 779,191,441,Y tế
+Cho_Q10_780,Chợ truyền thống Q10 780,568,524,Chợ truyền thống
+Cho_Q1_781,Chợ truyền thống Q1 781,26,91,Chợ truyền thống
+CongVien_Q10_782,Công viên Q10 782,95,332,Công viên
+VuiChoi_Q7_783,Vui chơi Q7 783,12,298,Vui chơi
+Cho_Q7_784,Chợ truyền thống Q7 784,86,572,Chợ truyền thống
+BV_Q10_785,Y tế Q10 785,533,173,Y tế
+DT_Q7_786,Di tích lịch sử Q7 786,173,142,Di tích lịch sử
+CongVien_Q5_787,Công viên Q5 787,274,504,Công viên
+BV_Q1_788,Y tế Q1 788,171,445,Y tế
+CongVien_Q7_789,Công viên Q7 789,306,495,Công viên
+VuiChoi_Q1_790,Vui chơi Q1 790,369,257,Vui chơi
+BV_ThuDuc_791,Y tế ThuDuc 791,507,200,Y tế
+Cho_Q1_792,Chợ truyền thống Q1 792,138,311,Chợ truyền thống
+DH_Q7_793,Đại học Q7 793,340,389,Đại học
+VuiChoi_BinhThanh_794,Vui chơi BinhThanh 794,337,450,Vui chơi
+CongVien_Q7_795,Công viên Q7 795,139,307,Công viên
+CongVien_Q10_796,Công viên Q10 796,205,490,Công viên
+CongVien_Q3_797,Công viên Q3 797,407,326,Công viên
+CongVien_ThuDuc_798,Công viên ThuDuc 798,502,589,Công viên
+VuiChoi_Q3_799,Vui chơi Q3 799,333,385,Vui chơi
+CongVien_BinhThanh_800,Công viên BinhThanh 800,402,373,Công viên
+DH_Q10_801,Đại học Q10 801,204,558,Đại học
+BV_ThuDuc_802,Y tế ThuDuc 802,563,27,Y tế
+DT_Q7_803,Di tích lịch sử Q7 803,214,448,Di tích lịch sử
+VuiChoi_Q5_804,Vui chơi Q5 804,70,418,Vui chơi
+DT_Q7_805,Di tích lịch sử Q7 805,142,310,Di tích lịch sử
+BV_Q5_806,Y tế Q5 806,157,433,Y tế
+VuiChoi_Q7_807,Vui chơi Q7 807,75,459,Vui chơi
+TTTM_Q7_808,TTTM Q7 808,596,410,TTTM
+TTTM_Q10_809,TTTM Q10 809,428,556,TTTM
+DH_BinhThanh_810,Đại học BinhThanh 810,368,549,Đại học
+TTTM_ThuDuc_811,TTTM ThuDuc 811,87,111,TTTM
+VuiChoi_Q3_812,Vui chơi Q3 812,363,170,Vui chơi
+DT_Q10_813,Di tích lịch sử Q10 813,45,576,Di tích lịch sử
+DT_ThuDuc_814,Di tích lịch sử ThuDuc 814,409,339,Di tích lịch sử
+VuiChoi_Q7_815,Vui chơi Q7 815,108,10,Vui chơi
+DH_Q5_816,Đại học Q5 816,227,522,Đại học
+DT_Q10_817,Di tích lịch sử Q10 817,571,594,Di tích lịch sử
+DT_Q10_818,Di tích lịch sử Q10 818,226,456,Di tích lịch sử
+CongVien_Q7_819,Công viên Q7 819,474,512,Công viên
+BV_Q5_820,Y tế Q5 820,25,494,Y tế
+DH_Q5_821,Đại học Q5 821,425,87,Đại học
+DH_BinhThanh_822,Đại học BinhThanh 822,145,356,Đại học
+CongVien_Q5_823,Công viên Q5 823,466,211,Công viên
+TTTM_Q7_824,TTTM Q7 824,356,487,TTTM
+DH_Q7_825,Đại học Q7 825,463,326,Đại học
+DH_Q5_826,Đại học Q5 826,45,117,Đại học
+DH_BinhThanh_827,Đại học BinhThanh 827,351,111,Đại học
+DT_BinhThanh_828,Di tích lịch sử BinhThanh 828,168,249,Di tích lịch sử
+TTTM_Q3_829,TTTM Q3 829,565,163,TTTM
+CongVien_Q10_830,Công viên Q10 830,436,473,Công viên
+BV_BinhThanh_831,Y tế BinhThanh 831,414,188,Y tế
+BV_ThuDuc_832,Y tế ThuDuc 832,442,405,Y tế
+DH_ThuDuc_833,Đại học ThuDuc 833,202,460,Đại học
+TTTM_Q7_834,TTTM Q7 834,398,4,TTTM
+DT_Q3_835,Di tích lịch sử Q3 835,210,285,Di tích lịch sử
+VuiChoi_ThuDuc_836,Vui chơi ThuDuc 836,64,591,Vui chơi
+DH_BinhThanh_837,Đại học BinhThanh 837,549,191,Đại học
+CongVien_Q5_838,Công viên Q5 838,201,468,Công viên
+DH_Q5_839,Đại học Q5 839,501,540,Đại học
+DT_Q5_840,Di tích lịch sử Q5 840,397,401,Di tích lịch sử
+TTTM_Q1_841,TTTM Q1 841,356,360,TTTM
+VuiChoi_Q7_842,Vui chơi Q7 842,176,304,Vui chơi
+TTTM_Q10_843,TTTM Q10 843,86,137,TTTM
+CongVien_Q1_844,Công viên Q1 844,244,312,Công viên
+DH_Q3_845,Đại học Q3 845,382,144,Đại học
+TTTM_Q7_846,TTTM Q7 846,428,141,TTTM
+TTTM_Q7_847,TTTM Q7 847,433,190,TTTM
+Cho_ThuDuc_848,Chợ truyền thống ThuDuc 848,550,177,Chợ truyền thống
+TTTM_Q3_849,TTTM Q3 849,501,295,TTTM
+BV_Q3_850,Y tế Q3 850,322,461,Y tế
+TTTM_Q1_851,TTTM Q1 851,367,9,TTTM
+Cho_Q3_852,Chợ truyền thống Q3 852,199,393,Chợ truyền thống
+TTTM_Q10_853,TTTM Q10 853,506,418,TTTM
+DT_Q7_854,Di tích lịch sử Q7 854,425,454,Di tích lịch sử
+Cho_Q3_855,Chợ truyền thống Q3 855,84,578,Chợ truyền thống
+DH_BinhThanh_856,Đại học BinhThanh 856,225,299,Đại học
+DH_Q5_857,Đại học Q5 857,230,550,Đại học
+CongVien_Q3_858,Công viên Q3 858,468,579,Công viên
+DT_BinhThanh_859,Di tích lịch sử BinhThanh 859,507,562,Di tích lịch sử
+TTTM_Q1_860,TTTM Q1 860,586,116,TTTM
+CongVien_BinhThanh_861,Công viên BinhThanh 861,556,375,Công viên
+TTTM_BinhThanh_862,TTTM BinhThanh 862,42,451,TTTM
+TTTM_Q3_863,TTTM Q3 863,435,104,TTTM
+DT_BinhThanh_864,Di tích lịch sử BinhThanh 864,253,304,Di tích lịch sử
+VuiChoi_Q1_865,Vui chơi Q1 865,460,269,Vui chơi
+CongVien_BinhThanh_866,Công viên BinhThanh 866,89,449,Công viên
+VuiChoi_Q1_867,Vui chơi Q1 867,242,214,Vui chơi
+VuiChoi_ThuDuc_868,Vui chơi ThuDuc 868,359,438,Vui chơi
+BV_Q10_869,Y tế Q10 869,142,211,Y tế
+VuiChoi_Q3_870,Vui chơi Q3 870,60,583,Vui chơi
+CongVien_Q10_871,Công viên Q10 871,287,551,Công viên
+BV_Q5_872,Y tế Q5 872,299,296,Y tế
+TTTM_Q5_873,TTTM Q5 873,526,97,TTTM
+BV_BinhThanh_874,Y tế BinhThanh 874,421,60,Y tế
+CongVien_BinhThanh_875,Công viên BinhThanh 875,129,135,Công viên
+BV_Q3_876,Y tế Q3 876,329,253,Y tế
+VuiChoi_BinhThanh_877,Vui chơi BinhThanh 877,402,501,Vui chơi
+BV_Q10_878,Y tế Q10 878,275,424,Y tế
+Cho_Q7_879,Chợ truyền thống Q7 879,77,95,Chợ truyền thống
+Cho_Q10_880,Chợ truyền thống Q10 880,284,377,Chợ truyền thống
+Cho_Q7_881,Chợ truyền thống Q7 881,335,595,Chợ truyền thống
+DH_BinhThanh_882,Đại học BinhThanh 882,95,469,Đại học
+DT_ThuDuc_883,Di tích lịch sử ThuDuc 883,366,64,Di tích lịch sử
+VuiChoi_Q10_884,Vui chơi Q10 884,407,223,Vui chơi
+Cho_BinhThanh_885,Chợ truyền thống BinhThanh 885,216,506,Chợ truyền thống
+CongVien_Q5_886,Công viên Q5 886,290,345,Công viên
+TTTM_Q10_887,TTTM Q10 887,133,579,TTTM
+VuiChoi_Q7_888,Vui chơi Q7 888,351,49,Vui chơi
+DH_Q1_889,Đại học Q1 889,470,16,Đại học
+DH_BinhThanh_890,Đại học BinhThanh 890,161,451,Đại học
+Cho_Q1_891,Chợ truyền thống Q1 891,438,207,Chợ truyền thống
+DT_Q3_892,Di tích lịch sử Q3 892,309,162,Di tích lịch sử
+VuiChoi_Q5_893,Vui chơi Q5 893,95,369,Vui chơi
+CongVien_Q1_894,Công viên Q1 894,380,169,Công viên
+DH_Q7_895,Đại học Q7 895,312,239,Đại học
+Cho_ThuDuc_896,Chợ truyền thống ThuDuc 896,93,97,Chợ truyền thống
+DH_Q3_897,Đại học Q3 897,488,79,Đại học
+BV_Q10_898,Y tế Q10 898,231,531,Y tế
+DT_Q7_899,Di tích lịch sử Q7 899,9,8,Di tích lịch sử
+DT_Q5_900,Di tích lịch sử Q5 900,123,432,Di tích lịch sử
+DT_Q3_901,Di tích lịch sử Q3 901,489,72,Di tích lịch sử
+BV_Q7_902,Y tế Q7 902,91,104,Y tế
+DH_Q5_903,Đại học Q5 903,376,306,Đại học
+BV_Q7_904,Y tế Q7 904,136,146,Y tế
+DH_Q10_905,Đại học Q10 905,576,8,Đại học
+TTTM_ThuDuc_906,TTTM ThuDuc 906,168,450,TTTM
+CongVien_ThuDuc_907,Công viên ThuDuc 907,218,155,Công viên
+Cho_Q10_908,Chợ truyền thống Q10 908,453,222,Chợ truyền thống
+DH_Q1_909,Đại học Q1 909,143,126,Đại học
+TTTM_ThuDuc_910,TTTM ThuDuc 910,393,359,TTTM
+Cho_Q5_911,Chợ truyền thống Q5 911,143,253,Chợ truyền thống
+CongVien_ThuDuc_912,Công viên ThuDuc 912,86,254,Công viên
+TTTM_Q10_913,TTTM Q10 913,291,27,TTTM
+VuiChoi_BinhThanh_914,Vui chơi BinhThanh 914,308,210,Vui chơi
+TTTM_Q10_915,TTTM Q10 915,521,193,TTTM
+DT_Q7_916,Di tích lịch sử Q7 916,302,55,Di tích lịch sử
+VuiChoi_BinhThanh_917,Vui chơi BinhThanh 917,245,506,Vui chơi
+Cho_Q1_918,Chợ truyền thống Q1 918,246,511,Chợ truyền thống
+DT_Q10_919,Di tích lịch sử Q10 919,72,540,Di tích lịch sử
+DH_Q5_920,Đại học Q5 920,324,135,Đại học
+Cho_BinhThanh_921,Chợ truyền thống BinhThanh 921,582,430,Chợ truyền thống
+CongVien_Q10_922,Công viên Q10 922,176,482,Công viên
+VuiChoi_Q1_923,Vui chơi Q1 923,17,69,Vui chơi
+DH_Q5_924,Đại học Q5 924,220,40,Đại học
+DH_BinhThanh_925,Đại học BinhThanh 925,407,518,Đại học
+CongVien_ThuDuc_926,Công viên ThuDuc 926,513,425,Công viên
+Cho_ThuDuc_927,Chợ truyền thống ThuDuc 927,411,84,Chợ truyền thống
+DT_Q10_928,Di tích lịch sử Q10 928,550,156,Di tích lịch sử
+CongVien_Q1_929,Công viên Q1 929,317,80,Công viên
+TTTM_Q3_930,TTTM Q3 930,159,549,TTTM
+CongVien_Q7_931,Công viên Q7 931,600,67,Công viên
+CongVien_ThuDuc_932,Công viên ThuDuc 932,447,244,Công viên
+DH_Q3_933,Đại học Q3 933,88,444,Đại học
+DH_Q7_934,Đại học Q7 934,56,316,Đại học
+DT_ThuDuc_935,Di tích lịch sử ThuDuc 935,179,122,Di tích lịch sử
+DH_ThuDuc_936,Đại học ThuDuc 936,140,11,Đại học
+BV_Q7_937,Y tế Q7 937,355,535,Y tế
+TTTM_BinhThanh_938,TTTM BinhThanh 938,265,170,TTTM
+CongVien_Q3_939,Công viên Q3 939,275,120,Công viên
+VuiChoi_Q1_940,Vui chơi Q1 940,343,439,Vui chơi
+CongVien_Q10_941,Công viên Q10 941,65,269,Công viên
+DT_Q10_942,Di tích lịch sử Q10 942,78,508,Di tích lịch sử
+Cho_Q10_943,Chợ truyền thống Q10 943,368,56,Chợ truyền thống
+Cho_BinhThanh_944,Chợ truyền thống BinhThanh 944,580,170,Chợ truyền thống
+CongVien_Q3_945,Công viên Q3 945,261,105,Công viên
+TTTM_ThuDuc_946,TTTM ThuDuc 946,118,233,TTTM
+DT_Q10_947,Di tích lịch sử Q10 947,2,45,Di tích lịch sử
+VuiChoi_BinhThanh_948,Vui chơi BinhThanh 948,12,250,Vui chơi
+DH_Q7_949,Đại học Q7 949,372,392,Đại học
+BV_Q3_950,Y tế Q3 950,36,566,Y tế
+VuiChoi_ThuDuc_951,Vui chơi ThuDuc 951,429,229,Vui chơi
+CongVien_Q3_952,Công viên Q3 952,426,327,Công viên
+CongVien_BinhThanh_953,Công viên BinhThanh 953,79,585,Công viên
+CongVien_Q1_954,Công viên Q1 954,514,53,Công viên
+BV_Q3_955,Y tế Q3 955,528,47,Y tế
+Cho_Q1_956,Chợ truyền thống Q1 956,476,289,Chợ truyền thống
+VuiChoi_BinhThanh_957,Vui chơi BinhThanh 957,318,335,Vui chơi
+DH_Q10_958,Đại học Q10 958,467,8,Đại học
+CongVien_Q3_959,Công viên Q3 959,298,577,Công viên
+VuiChoi_Q5_960,Vui chơi Q5 960,248,475,Vui chơi
+CongVien_Q10_961,Công viên Q10 961,505,200,Công viên
+DT_Q10_962,Di tích lịch sử Q10 962,251,154,Di tích lịch sử
+DH_Q7_963,Đại học Q7 963,24,238,Đại học
+TTTM_Q5_964,TTTM Q5 964,9,343,TTTM
+DH_BinhThanh_965,Đại học BinhThanh 965,385,314,Đại học
+DH_Q3_966,Đại học Q3 966,542,243,Đại học
+Cho_Q7_967,Chợ truyền thống Q7 967,61,145,Chợ truyền thống
+DT_Q5_968,Di tích lịch sử Q5 968,95,44,Di tích lịch sử
+BV_BinhThanh_969,Y tế BinhThanh 969,532,422,Y tế
+DT_Q5_970,Di tích lịch sử Q5 970,469,86,Di tích lịch sử
+TTTM_Q1_971,TTTM Q1 971,517,136,TTTM
+DT_BinhThanh_972,Di tích lịch sử BinhThanh 972,403,76,Di tích lịch sử
+TTTM_Q10_973,TTTM Q10 973,63,445,TTTM
+DT_Q3_974,Di tích lịch sử Q3 974,242,298,Di tích lịch sử
+CongVien_BinhThanh_975,Công viên BinhThanh 975,322,402,Công viên
+DT_BinhThanh_976,Di tích lịch sử BinhThanh 976,334,325,Di tích lịch sử
+Cho_Q5_977,Chợ truyền thống Q5 977,239,76,Chợ truyền thống
+BV_Q3_978,Y tế Q3 978,598,111,Y tế
+BV_Q1_979,Y tế Q1 979,168,460,Y tế
+Cho_Q5_980,Chợ truyền thống Q5 980,416,123,Chợ truyền thống
+TTTM_Q5_981,TTTM Q5 981,212,462,TTTM
+CongVien_Q7_982,Công viên Q7 982,271,122,Công viên
+DH_Q3_983,Đại học Q3 983,311,41,Đại học
+BV_BinhThanh_984,Y tế BinhThanh 984,335,151,Y tế
+DH_ThuDuc_985,Đại học ThuDuc 985,254,364,Đại học
+Cho_Q10_986,Chợ truyền thống Q10 986,50,306,Chợ truyền thống
+CongVien_BinhThanh_987,Công viên BinhThanh 987,178,31,Công viên
+Cho_BinhThanh_988,Chợ truyền thống BinhThanh 988,463,569,Chợ truyền thống
+DT_Q10_989,Di tích lịch sử Q10 989,255,96,Di tích lịch sử
+Cho_Q1_990,Chợ truyền thống Q1 990,143,124,Chợ truyền thống
+DH_Q1_991,Đại học Q1 991,227,133,Đại học
+BV_BinhThanh_992,Y tế BinhThanh 992,410,381,Y tế
+DT_ThuDuc_993,Di tích lịch sử ThuDuc 993,86,596,Di tích lịch sử
+TTTM_Q5_994,TTTM Q5 994,76,22,TTTM
+DH_Q3_995,Đại học Q3 995,454,131,Đại học
+DH_BinhThanh_996,Đại học BinhThanh 996,339,125,Đại học
