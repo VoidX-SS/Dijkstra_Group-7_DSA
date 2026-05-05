@@ -198,12 +198,6 @@ namespace DoAnCuoiKy_Dijkstra.UI
             gbFindPath.Controls.Add(btnFindPath);
             controlPanel.Controls.Add(gbFindPath);
 
-            // --- Nút Mở Form Benchmark ---
-            currentY += 150;
-            Button btnOpenBenchmark = new Button() { Text = "MỞ CÔNG CỤ BENCHMARK", Location = new Point(marginX, currentY), Size = new Size(width, 40), BackColor = Color.LightCoral, Font = new Font("Arial", 11, FontStyle.Bold), ForeColor = Color.White };
-            btnOpenBenchmark.Click += (s, e) => { new BenchmarkForm().ShowDialog(); };
-            controlPanel.Controls.Add(btnOpenBenchmark);
-
             // Bước 3. Khởi tạo Panel Thông báo Lỗi
             errorPanel = new Panel() { Size = new Size(450, 250), BackColor = Color.FromArgb(230, 80, 80), Visible = false };
             errorPanel.BorderStyle = BorderStyle.FixedSingle;
