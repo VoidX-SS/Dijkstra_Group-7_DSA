@@ -43,6 +43,14 @@ namespace DoAnCuoiKy_Dijkstra.UI
         private CheckBox chkDirected;
         private Button btnAddEdge;
 
+        // Khu vực xóa điểm
+        private TextBox txtDeletePointId;
+        private Button btnDeletePoint;
+
+        // Khu vực xóa cạnh
+        private TextBox txtDeleteEdgeId1, txtDeleteEdgeId2;
+        private Button btnDeleteEdge;
+
         // Khu vực File CSV
         private Button btnLoadCSV;
         private ProgressBar progressBar;
@@ -169,6 +177,39 @@ namespace DoAnCuoiKy_Dijkstra.UI
             controlPanel.Controls.Add(gbAddEdge);
             currentY += 130;
 
+            // --- GroupBox Xóa Điểm ---
+            GroupBox gbDeletePoint = new GroupBox() { Text = "Xóa Điểm", Location = new Point(marginX, currentY), Size = new Size(width, 70), Font = new Font("Arial", 10) };
+            
+            gbDeletePoint.Controls.Add(new Label() { Text = "ID:", Location = new Point(10, 30), AutoSize = true });
+            txtDeletePointId = new TextBox() { Location = new Point(50, 25), Width = 100 };
+            EnableAutoComplete(txtDeletePointId);
+            gbDeletePoint.Controls.Add(txtDeletePointId);
+
+            btnDeletePoint = new Button() { Text = "Xóa Điểm", Location = new Point(170, 22), Width = 100, BackColor = Color.LightPink };
+            btnDeletePoint.Click += BtnDeletePoint_Click;
+            gbDeletePoint.Controls.Add(btnDeletePoint);
+            controlPanel.Controls.Add(gbDeletePoint);
+            currentY += 80;
+
+            // --- GroupBox Xóa Cạnh ---
+            GroupBox gbDeleteEdge = new GroupBox() { Text = "Xóa Cạnh", Location = new Point(marginX, currentY), Size = new Size(width, 70), Font = new Font("Arial", 10) };
+            
+            gbDeleteEdge.Controls.Add(new Label() { Text = "ID 1:", Location = new Point(10, 30), AutoSize = true });
+            txtDeleteEdgeId1 = new TextBox() { Location = new Point(50, 25), Width = 70 };
+            EnableAutoComplete(txtDeleteEdgeId1);
+            gbDeleteEdge.Controls.Add(txtDeleteEdgeId1);
+
+            gbDeleteEdge.Controls.Add(new Label() { Text = "ID 2:", Location = new Point(125, 30), AutoSize = true });
+            txtDeleteEdgeId2 = new TextBox() { Location = new Point(165, 25), Width = 70 };
+            EnableAutoComplete(txtDeleteEdgeId2);
+            gbDeleteEdge.Controls.Add(txtDeleteEdgeId2);
+
+            btnDeleteEdge = new Button() { Text = "Xóa Cạnh", Location = new Point(240, 22), Width = 65, BackColor = Color.LightPink };
+            btnDeleteEdge.Click += BtnDeleteEdge_Click;
+            gbDeleteEdge.Controls.Add(btnDeleteEdge);
+            controlPanel.Controls.Add(gbDeleteEdge);
+            currentY += 80;
+
             // --- Load CSV (Tối ưu hóa chạy nền bằng Task) ---
             btnLoadCSV = new Button() { Text = "CHÈN TOÀN BỘ ĐỒ THỊ", Location = new Point(marginX, currentY), Size = new Size(width, 50), BackColor = Color.SkyBlue, Font = new Font("Arial", 11, FontStyle.Bold) };
             btnLoadCSV.Click += BtnLoadCSV_Click;
@@ -264,6 +305,57 @@ namespace DoAnCuoiKy_Dijkstra.UI
 
                 mapPanel.Invalidate(); // Vẽ lại bản đồ
                 txtEdgeId1.Clear(); txtEdgeId2.Clear();
+            }
+            catch (Exception ex)
+            {
+                ShowError(ex.Message);
+            }
+        }
+
+        private void BtnDeletePoint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id = txtDeletePointId.Text;
+                graph.RemoveVertex(id);
+                UpdateUIAfterGraphChange();
+                
+                // Nếu điểm đang chọn bị xóa, bỏ chọn
+                if (selectedVertex != null && selectedVertex.Id == id)
+                {
+                    selectedVertex = null;
+                    infoPanel.Visible = false;
+                }
+                
+                txtDeletePointId.Clear();
+                MessageBox.Show("Đã xóa điểm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                ShowError(ex.Message);
+            }
+        }
+
+        private void BtnDeleteEdge_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string id1 = txtDeleteEdgeId1.Text;
+                string id2 = txtDeleteEdgeId2.Text;
+
+                graph.RemoveEdge(id1, id2);
+                mapPanel.Invalidate(); // Vẽ lại bản đồ
+                
+                // Bỏ chọn cạnh nếu đang chọn cạnh này
+                if (selectedEdgeKey == id1 + "_" + id2 || selectedEdgeKey == id2 + "_" + id1)
+                {
+                    selectedEdgeKey = null;
+                    infoPanel.Visible = false;
+                }
+
+                txtDeleteEdgeId1.Clear(); 
+                txtDeleteEdgeId2.Clear();
+                MessageBox.Show("Đã xóa cạnh thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -440,6 +532,9 @@ namespace DoAnCuoiKy_Dijkstra.UI
             txtEdgeId2.AutoCompleteCustomSource = collection;
             txtFindSource.AutoCompleteCustomSource = collection;
             txtFindDest.AutoCompleteCustomSource = collection;
+            txtDeletePointId.AutoCompleteCustomSource = collection;
+            txtDeleteEdgeId1.AutoCompleteCustomSource = collection;
+            txtDeleteEdgeId2.AutoCompleteCustomSource = collection;
 
             mapPanel.Invalidate(); // Vẽ lại
         }
