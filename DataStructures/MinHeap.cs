@@ -1,9 +1,8 @@
 using System;
-using System.Collections.Generic;
 
 namespace DoAnCuoiKy_Dijkstra
 {
-    // Cài đặt hàng đợi ưu tiên MinHeap bằng List và Dictionary.
+    // Cài đặt hàng đợi ưu tiên MinHeap bằng CustomList và CustomDictionary.
     // Giúp giảm độ phức tạp thuật toán Dijkstra xuống O((V+E)logV).
     public class MinHeap<T>
     {
@@ -20,11 +19,11 @@ namespace DoAnCuoiKy_Dijkstra
             }
         }
 
-        // List dùng để lưu trữ các phần tử của Heap theo cấu trúc cây nhị phân
-        private List<HeapNode> heap;
+        // CustomList dùng để lưu trữ các phần tử của Heap theo cấu trúc cây nhị phân
+        private CustomList<HeapNode> heap;
         
-        // Dictionary dùng để lưu index (vị trí) của mỗi đỉnh trong List
-        private Dictionary<T, int> indexMap;
+        // CustomDictionary dùng để lưu index (vị trí) của mỗi đỉnh trong List
+        private CustomDictionary<T, int> indexMap;
 
         // Trả về số lượng phần tử hiện tại trong Heap
         public int Count 
@@ -34,8 +33,8 @@ namespace DoAnCuoiKy_Dijkstra
 
         public MinHeap()
         {
-            heap = new List<HeapNode>();
-            indexMap = new Dictionary<T, int>();
+            heap = new CustomList<HeapNode>();
+            indexMap = new CustomDictionary<T, int>();
         }
 
         public bool IsEmpty()

@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace DoAnCuoiKy_Dijkstra
 {
@@ -15,7 +14,7 @@ namespace DoAnCuoiKy_Dijkstra
         }
 
         // Dựng lại đường đi từ điển lưu vết
-        private CustomLinkedList<Vertex> BuildPath(Dictionary<Vertex, Vertex> previous, Vertex startVertex, Vertex endVertex)
+        private CustomLinkedList<Vertex> BuildPath(CustomDictionary<Vertex, Vertex> previous, Vertex startVertex, Vertex endVertex)
         {
             CustomLinkedList<Vertex> path = new CustomLinkedList<Vertex>();
             Vertex current = endVertex;
@@ -58,15 +57,19 @@ namespace DoAnCuoiKy_Dijkstra
             }
 
             // distances: Bản đồ lưu khoảng cách ngắn nhất tạm thời từ đỉnh xuất phát tới các đỉnh khác
-            Dictionary<Vertex, double> distances = new Dictionary<Vertex, double>();
+            CustomDictionary<Vertex, double> distances = new CustomDictionary<Vertex, double>();
             // previous: Bản đồ lưu đỉnh liền trước trên đường đi ngắn nhất (để truy vết)
-            Dictionary<Vertex, Vertex> previous = new Dictionary<Vertex, Vertex>();
+            CustomDictionary<Vertex, Vertex> previous = new CustomDictionary<Vertex, Vertex>();
             // minHeap: Hàng đợi ưu tiên lấy đỉnh có khoảng cách ngắn nhất
             MinHeap<Vertex> minHeap = new MinHeap<Vertex>();
 
             // Khởi tạo trạng thái ban đầu: Khoảng cách tới tất cả đỉnh là vô cực
-            foreach (Vertex v in graph.GetAllVertices())
+            CustomList<Vertex> allVertices = graph.GetAllVertices();
+            for (int i = 0; i < allVertices.Count; i++)
+            {
+                Vertex v = allVertices[i];
                 distances.Add(v, double.MaxValue);
+            }
 
             // Khoảng cách tới điểm xuất phát = 0
             distances[startVertex] = 0;

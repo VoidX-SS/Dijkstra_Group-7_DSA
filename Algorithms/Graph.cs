@@ -1,21 +1,20 @@
 using System;
-using System.Collections.Generic;
 
 namespace DoAnCuoiKy_Dijkstra
 {
     // Cấu trúc đồ thị quản lý toàn bộ các điểm và các cạnh nối
     public class Graph
     {
-        // Sử dụng Dictionary (HashTable) để tìm đỉnh theo ID
-        private Dictionary<string, Vertex> vertexMap;
+        // Sử dụng CustomDictionary (HashTable) để tìm đỉnh theo ID
+        private CustomDictionary<string, Vertex> vertexMap;
 
         public Graph()
         {
-            vertexMap = new Dictionary<string, Vertex>();
+            vertexMap = new CustomDictionary<string, Vertex>();
         }
 
         // Lấy danh sách tất cả các đỉnh
-        public Dictionary<string, Vertex>.ValueCollection GetAllVertices()
+        public CustomList<Vertex> GetAllVertices()
         {
             return vertexMap.Values;
         }
@@ -123,6 +122,74 @@ namespace DoAnCuoiKy_Dijkstra
 
             double distance = CalculateEuclideanDistance(from, to);
             from.Edges.AddLast(new Edge(to, distance));
+        }
+
+        // Xóa đỉnh khỏi đồ thị
+        public void RemoveVertex(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id)) throw new ArgumentException("Lỗi: ID không được để trống.");
+            id = id.Trim();
+
+            if (!vertexMap.ContainsKey(id))
+                throw new ArgumentException("Lỗi: Đỉnh không tồn tại trong đồ thị.");
+
+            // 1. Xóa tất cả các cạnh từ các đỉnh khác trỏ tới đỉnh này
+            // Sử dụng vòng lặp duyệt qua tất cả các đỉnh
+            CustomList<Vertex> allVertices = GetAllVertices();
+            for (int i = 0; i < allVertices.Count; i++)
+            {
+                Vertex v = allVertices[i];
+                ListNode<Edge> current = v.Edges.Head;
+                while (current != null)
+                {
+                    ListNode<Edge> next = current.Next; // Lưu lại Next vì có thể current bị xóa
+                    if (current.Data.Destination.Id == id)
+                        v.Edges.Remove(current.Data);
+                    current = next;
+                }
+            }
+
+            // 2. Xóa đỉnh khỏi từ điển đồ thị
+            vertexMap.Remove(id);
+        }
+
+        // Xóa cạnh khỏi đồ thị (xóa mọi chiều)
+        public void RemoveEdge(string id1, string id2)
+        {
+            if (string.IsNullOrWhiteSpace(id1) || string.IsNullOrWhiteSpace(id2)) 
+                throw new ArgumentException("Lỗi: ID không được để trống.");
+
+            id1 = id1.Trim();
+            id2 = id2.Trim();
+
+            Vertex v1 = GetVertex(id1);
+            Vertex v2 = GetVertex(id2);
+
+            if (v1 == null || v2 == null)
+                throw new ArgumentException("Lỗi: Một trong hai đỉnh không tồn tại.");
+
+            // Thử xóa ở cả 2 đầu, nếu có ít nhất 1 đầu xóa thành công là OK
+            bool removed1 = RemoveEdgeFromList(v1, id2);
+            bool removed2 = RemoveEdgeFromList(v2, id1);
+
+            if (!removed1 && !removed2)
+                throw new ArgumentException("Lỗi: Không tìm thấy cạnh nối giữa hai đỉnh này.");
+        }
+
+        // Hàm phụ trợ để tìm và xóa cạnh trong danh sách liên kết của 1 đỉnh
+        private bool RemoveEdgeFromList(Vertex from, string toId)
+        {
+            ListNode<Edge> current = from.Edges.Head;
+            while (current != null)
+            {
+                if (current.Data.Destination.Id == toId)
+                {
+                    from.Edges.Remove(current.Data);
+                    return true;
+                }
+                current = current.Next;
+            }
+            return false;
         }
     }
 }
