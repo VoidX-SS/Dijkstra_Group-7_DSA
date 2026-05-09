@@ -16,7 +16,7 @@ public class Welcome : Form
     }
     private void InitializeComponent()
     {
-        this.BackgroundImage = global::Đồ_án.Properties.Resources.hồng_tím;//hình ảnh được lấy từ máy chủ, global để tìm kiếm trong tất cả các file
+        this.BackgroundImage = Dijkstra.Properties.Resources.hong_tim;//hình ảnh được lấy từ máy chủ, global để tìm kiếm trong tất cả các file
         this.BackgroundImageLayout=System.Windows.Forms.ImageLayout.Stretch;
         this.WindowState = FormWindowState.Maximized;
         this.Text = "Đồ án Dijkstra";
