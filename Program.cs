@@ -15,11 +15,10 @@ namespace DoAnCuoiKy_Dijkstra
             // Cài đặt phong cách giao diện mặc định
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            Welcome welcome=new Welcome();
-            if (welcome.ShowDialog()==DialogResult.OK)//khi nhấn bắt đầu chạy giao diện MainForm
+            Welcome welcome = new Welcome();
+            if (welcome.ShowDialog() == DialogResult.OK)//khi nhấn bắt đầu chạy giao diện MainForm
             {
-                 Application.Run(new MainForm());
+                Application.Run(new MainForm());
             }
         }
     }

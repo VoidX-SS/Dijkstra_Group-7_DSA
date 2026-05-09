@@ -1,3 +1,4 @@
+using Dijkstra.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,72 +9,73 @@ using System.Windows.Forms;
 
 namespace DoAnCuoiKy_Dijkstra.UI
 {
-public class Welcome : Form
-{
-    public Welcome()
+    public class Welcome : Form
     {
-        InitializeComponent();
-    }
-    private void InitializeComponent()
-    {
-        this.BackgroundImage = Dijkstra.Properties.Resources.hong_tim;//hình ảnh được lấy từ máy chủ, global để tìm kiếm trong tất cả các file
-        this.BackgroundImageLayout=System.Windows.Forms.ImageLayout.Stretch;
-        this.WindowState = FormWindowState.Maximized;
-        this.Text = "Đồ án Dijkstra";
-        this.Size = new Size(600, 400);
-        this.StartPosition = FormStartPosition.CenterScreen;
-        this.FormBorderStyle = FormBorderStyle.FixedSingle;
-        this.BackColor = Color.FromArgb(45, 45, 48);
+        public Welcome()
+        {
+            InitializeComponent();
+        }
+        private void InitializeComponent()
+        {
+            this.BackgroundImage = Dijkstra.Properties.Resources.hong_tim;//hình ảnh được lấy từ máy chủ, global để tìm kiếm trong tất cả các file
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.WindowState = FormWindowState.Maximized;
+            this.Text = "Đồ án Dijkstra";
+            this.Size = new Size(600, 400);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.BackColor = Color.FromArgb(45, 45, 48);
 
-        Label lblTitle = new Label()
-        {
-            Text = "Thuật toán Dijkstra \nỨng dụng tìm đường",
-            Font = new Font("Segoe UI", 40, FontStyle.Bold),
-            ForeColor = Color.White,
-            TextAlign = ContentAlignment.MiddleCenter,
-            Dock = DockStyle.Top,
-            Height = 250,
-            BackColor = Color.Transparent
-        };
+            Label lblTitle = new Label()
+            {
+                Text = "Thuật toán Dijkstra \nỨng dụng tìm đường",
+                Font = new Font("Segoe UI", 40, FontStyle.Bold),
+                ForeColor = Color.White,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Top,
+                Height = 250,
+                BackColor = Color.Transparent
+            };
 
-        Button btnStart = new Button()
+            Button btnStart = new Button()
+            {
+                Text = "Bắt Đầu",
+                Size = new Size(300, 100),
+                Location = new Point(615, 350),
+                BackColor = Color.FromArgb(0, 122, 204),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 16, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnStart.FlatAppearance.BorderSize = 0;
+            btnStart.Click += (s, e) => {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            };//đóng Form và trả về kết quả OK
+            Button btnExit = new Button()
+            {
+                Text = "Thoát",
+                Size = new Size(300, 100),
+                Location = new Point(615, 500),
+                ForeColor = Color.Gray,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 16, FontStyle.Regular),
+            };
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(50, 255, 255, 255);
+            btnExit.Click += (s, e) => Application.Exit();
+            this.Controls.Add(btnStart);
+            this.Controls.Add(btnExit);
+            this.Controls.Add(lblTitle);
+        }
+        protected override void OnPaint(PaintEventArgs e)
         {
-            Text = "Bắt Đầu",
-            Size = new Size(300, 100),
-            Location = new Point(615, 350),
-            BackColor = Color.FromArgb(0, 122, 204),
-            ForeColor = Color.White,
-            FlatStyle = FlatStyle.Flat,
-            Font = new Font("Segoe UI", 16, FontStyle.Bold),
-            Cursor = Cursors.Hand
-        };
-        btnStart.FlatAppearance.BorderSize = 0;
-        btnStart.Click += (s, e) => { this.DialogResult = DialogResult.OK;
-            this.Close();
-        };//đóng Form và trả về kết quả OK
-        Button btnExit = new Button()
-        {
-            Text = "Thoát",
-            Size = new Size(300, 100),
-            Location = new Point(615, 500),
-            ForeColor = Color.Gray,
-            FlatStyle = FlatStyle.Flat,
-            Font = new Font("Segoe UI", 16, FontStyle.Regular),
-        };
-        btnExit.FlatAppearance.BorderSize = 0;
-        btnExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(50, 255, 255, 255);
-        btnExit.Click += (s, e) => Application.Exit();
-        this.Controls.Add(btnStart);
-        this.Controls.Add(btnExit);
-        this.Controls.Add(lblTitle);
+            base.OnPaint(e);
+            Pen pen = new Pen(Color.FromArgb(0, 122, 204), 5);
+            e.Graphics.DrawRectangle(pen, 0, 0, this.Width - 1, this.Height - 1);
+        }
     }
-    protected override void OnPaint(PaintEventArgs e)
-    {
-        base.OnPaint(e);
-        Pen pen = new Pen(Color.FromArgb(0, 122, 204), 5);
-        e.Graphics.DrawRectangle(pen,0,0, this.Width-1, this.Height-1);
-    }
-}
     public class MainForm : Form
     {
         private SplitContainer splitContainer;
@@ -99,7 +101,7 @@ public class Welcome : Form
 
         // Các nút điều khiển trên giao diện
         private Label lblVertexCount;
-        
+
         // Khu vực thêm điểm
         private TextBox txtPointId, txtPointName, txtPointX, txtPointY;
         private Button btnAddPoint;
@@ -138,12 +140,12 @@ public class Welcome : Form
         {
             // Khởi tạo đồ thị rỗng
             graph = new Graph();
-            
+
             // Xây dựng giao diện
             InitializeUI();
-            
+
             // Thiết lập tính năng lăn chuột để phóng to và thu nhỏ map
-            this.MouseWheel += MapPanel_MouseWheel; 
+            this.MouseWheel += MapPanel_MouseWheel;
         }
 
         protected override void OnShown(EventArgs e)
@@ -198,7 +200,7 @@ public class Welcome : Form
 
             // --- GroupBox Thêm Điểm ---
             GroupBox gbAddPoint = new GroupBox() { Text = "Nhập Điểm", Location = new Point(marginX, currentY), Size = new Size(width, 150), Font = new Font("Arial", 10) };
-            
+
             gbAddPoint.Controls.Add(new Label() { Text = "ID:", Location = new Point(10, 35), AutoSize = true });
             txtPointId = new TextBox() { Location = new Point(50, 30), Width = 100 };
             gbAddPoint.Controls.Add(txtPointId);
@@ -223,7 +225,7 @@ public class Welcome : Form
 
             // --- GroupBox Thêm Cạnh ---
             GroupBox gbAddEdge = new GroupBox() { Text = "Nhập Cạnh", Location = new Point(marginX, currentY), Size = new Size(width, 120), Font = new Font("Arial", 10) };
-            
+
             gbAddEdge.Controls.Add(new Label() { Text = "ID 1:", Location = new Point(10, 35), AutoSize = true });
             txtEdgeId1 = new TextBox() { Location = new Point(55, 30), Width = 80 };
             EnableAutoComplete(txtEdgeId1); // Gợi ý ID tự động
@@ -245,7 +247,7 @@ public class Welcome : Form
 
             // --- GroupBox Xóa Điểm ---
             GroupBox gbDeletePoint = new GroupBox() { Text = "Xóa Điểm", Location = new Point(marginX, currentY), Size = new Size(width, 70), Font = new Font("Arial", 10) };
-            
+
             gbDeletePoint.Controls.Add(new Label() { Text = "ID:", Location = new Point(10, 30), AutoSize = true });
             txtDeletePointId = new TextBox() { Location = new Point(50, 25), Width = 100 };
             EnableAutoComplete(txtDeletePointId);
@@ -259,7 +261,7 @@ public class Welcome : Form
 
             // --- GroupBox Xóa Cạnh ---
             GroupBox gbDeleteEdge = new GroupBox() { Text = "Xóa Cạnh", Location = new Point(marginX, currentY), Size = new Size(width, 70), Font = new Font("Arial", 10) };
-            
+
             gbDeleteEdge.Controls.Add(new Label() { Text = "ID 1:", Location = new Point(10, 30), AutoSize = true });
             txtDeleteEdgeId1 = new TextBox() { Location = new Point(50, 25), Width = 70 };
             EnableAutoComplete(txtDeleteEdgeId1);
@@ -289,7 +291,7 @@ public class Welcome : Form
 
             // --- GroupBox Tìm Đường ---
             GroupBox gbFindPath = new GroupBox() { Text = "Tìm Đường Đi", Location = new Point(marginX, currentY), Size = new Size(width, 140), Font = new Font("Arial", 10), BackColor = Color.FromArgb(220, 255, 220) };
-            
+
             gbFindPath.Controls.Add(new Label() { Text = "Điểm đi (ID):", Location = new Point(10, 35), AutoSize = true });
             txtFindSource = new TextBox() { Location = new Point(100, 30), Width = 180 };
             EnableAutoComplete(txtFindSource);
@@ -312,7 +314,7 @@ public class Welcome : Form
             lblErrorMessage = new Label() { Text = "Chi tiết lỗi...", Font = new Font("Arial", 12), ForeColor = Color.White, Location = new Point(20, 80), Size = new Size(410, 100), TextAlign = ContentAlignment.TopCenter };
             btnCloseError = new Button() { Text = "ĐÃ HIỂU", Location = new Point(175, 190), Size = new Size(100, 40), BackColor = Color.White, Font = new Font("Arial", 10, FontStyle.Bold) };
             btnCloseError.Click += (s, e) => errorPanel.Visible = false;
-            
+
             errorPanel.Controls.Add(lblErrorTitle);
             errorPanel.Controls.Add(lblErrorMessage);
             errorPanel.Controls.Add(btnCloseError);
@@ -325,7 +327,7 @@ public class Welcome : Form
             lblInfo = new Label() { Text = "Thông số...", Font = new Font("Arial", 10), Location = new Point(15, 40), Size = new Size(250, 100) };
             btnCloseInfo = new Button() { Text = "Đóng", Location = new Point(100, 145), Size = new Size(80, 25) };
             btnCloseInfo.Click += (s, e) => infoPanel.Visible = false;
-            
+
             infoPanel.Controls.Add(lblInfoTitle);
             infoPanel.Controls.Add(lblInfo);
             infoPanel.Controls.Add(btnCloseInfo);
@@ -340,13 +342,13 @@ public class Welcome : Form
             {
                 string id = txtPointId.Text;
                 string name = txtPointName.Text;
-                
+
                 if (!double.TryParse(txtPointX.Text, out double x) || !double.TryParse(txtPointY.Text, out double y))
                     throw new Exception("Tọa độ X, Y không hợp lệ. Vui lòng nhập số.");
-                
+
                 graph.AddVertex(id, name, x, y);
                 UpdateUIAfterGraphChange();
-                
+
                 // Xóa trống ô nhập
                 txtPointId.Clear(); txtPointName.Clear(); txtPointX.Clear(); txtPointY.Clear();
             }
@@ -385,14 +387,14 @@ public class Welcome : Form
                 string id = txtDeletePointId.Text;
                 graph.RemoveVertex(id);
                 UpdateUIAfterGraphChange();
-                
+
                 // Nếu điểm đang chọn bị xóa, bỏ chọn
                 if (selectedVertex != null && selectedVertex.Id == id)
                 {
                     selectedVertex = null;
                     infoPanel.Visible = false;
                 }
-                
+
                 txtDeletePointId.Clear();
                 MessageBox.Show("Đã xóa điểm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -411,7 +413,7 @@ public class Welcome : Form
 
                 graph.RemoveEdge(id1, id2);
                 mapPanel.Invalidate(); // Vẽ lại bản đồ
-                
+
                 // Bỏ chọn cạnh nếu đang chọn cạnh này
                 if (selectedEdgeKey == id1 + "_" + id2 || selectedEdgeKey == id2 + "_" + id1)
                 {
@@ -419,7 +421,7 @@ public class Welcome : Form
                     infoPanel.Visible = false;
                 }
 
-                txtDeleteEdgeId1.Clear(); 
+                txtDeleteEdgeId1.Clear();
                 txtDeleteEdgeId2.Clear();
                 MessageBox.Show("Đã xóa cạnh thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -437,7 +439,7 @@ public class Welcome : Form
             try
             {
                 // Mở luồng Task chạy ngầm để lấy Graph
-                Graph loadedGraph = await Task.Run(() => 
+                Graph loadedGraph = await Task.Run(() =>
                 {
                     string locPath = "DS_Location.csv";
                     string edgePath = "DS_Edge.csv";
@@ -467,10 +469,10 @@ public class Welcome : Form
                 lastPathWeight = -1;
                 selectedVertex = null;
                 selectedEdgeKey = null;
-                
+
                 // Tự động căn chỉnh lại bản đồ về tọa độ chuẩn
                 offsetX = 50f; offsetY = 50f; scale = 1.0f;
-                
+
                 UpdateUIAfterGraphChange();
             }
             catch (Exception ex)
@@ -529,10 +531,10 @@ public class Welcome : Form
         {
             int edgeCount = CountEdges(v);
             lblInfo.Text = $"ID Thành Phố: {v.Id}\nTên: {v.Name}\nTọa độ (X, Y): ({v.X}, {v.Y})\nTổng số đường đi ra: {edgeCount}";
-            
+
             // Hiển thị panel kế bên cursor
             Point p = new Point((int)(v.X * coordScale * scale + offsetX) + 15, (int)(v.Y * coordScale * scale + offsetY) + 15);
-            
+
             // Điều kiện check để panel không bị chìm ra ngoài góc màn hình
             if (p.X + infoPanel.Width > mapPanel.Width) p.X = mapPanel.Width - infoPanel.Width;
             if (p.Y + infoPanel.Height > mapPanel.Height) p.Y = mapPanel.Height - infoPanel.Height;
@@ -545,10 +547,10 @@ public class Welcome : Form
         private void ShowEdgeInfo(string id1, string id2, bool isDirected, double weight, Point mousePos)
         {
             lblInfo.Text = $"CẠNH\nID 1: {id1}\nID 2: {id2}\nCó hướng: {(isDirected ? "Có" : "Không")}\nTrọng số: {Math.Round(weight, 2)}";
-            
+
             // Hiển thị panel cạnh con chuột
             Point p = new Point(mousePos.X + 15, mousePos.Y + 15);
-            
+
             // Đảm bảo panel không bị chìm ra ngoài góc màn hình
             if (p.X + infoPanel.Width > mapPanel.Width) p.X = mapPanel.Width - infoPanel.Width;
             if (p.Y + infoPanel.Height > mapPanel.Height) p.Y = mapPanel.Height - infoPanel.Height;
@@ -562,13 +564,13 @@ public class Welcome : Form
         {
             double l2 = (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
             if (l2 == 0) return Math.Sqrt((px - x1) * (px - x1) + (py - y1) * (py - y1));
-            
+
             double t = ((px - x1) * (x2 - x1) + (py - y1) * (y2 - y1)) / l2;
             t = Math.Max(0, Math.Min(1, t));
-            
+
             double projX = x1 + t * (x2 - x1);
             double projY = y1 + t * (y2 - y1);
-            
+
             return Math.Sqrt((px - projX) * (px - projX) + (py - projY) * (py - projY));
         }
 
@@ -577,7 +579,7 @@ public class Welcome : Form
         {
             int count = 0;
             ListNode<Edge> cur = v.Edges.Head;
-            while(cur != null) { count++; cur = cur.Next; }
+            while (cur != null) { count++; cur = cur.Next; }
             return count;
         }
 
@@ -585,7 +587,7 @@ public class Welcome : Form
         private void UpdateUIAfterGraphChange()
         {
             lblVertexCount.Text = "Tổng số đỉnh: " + graph.VertexCount;
-            
+
             // Tính năng auto hiện ID khi nhập ra
             // Cập nhật lại danh sách thành phố vào bộ nhớ Gợi ý
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
@@ -593,7 +595,7 @@ public class Welcome : Form
             {
                 collection.Add(v.Id); // Gợi ý nhập nhanh ID
             }
-            
+
             txtEdgeId1.AutoCompleteCustomSource = collection;
             txtEdgeId2.AutoCompleteCustomSource = collection;
             txtFindSource.AutoCompleteCustomSource = collection;
@@ -618,7 +620,7 @@ public class Welcome : Form
             // Zoom in / out khi lăn bi chuột
             if (e.Delta > 0) scale *= 1.1f;
             else scale /= 1.1f;
-            
+
             mapPanel.Invalidate();
         }
 
@@ -657,8 +659,8 @@ public class Welcome : Form
             float worldY = (e.Y - offsetY) / scale / coordScale;
 
             // Phạm vi sai số khi click
-            double hitRadius = 15 / scale / coordScale; 
-            
+            double hitRadius = 15 / scale / coordScale;
+
             foreach (Vertex v in graph.GetAllVertices())
             {
                 // Dùng công thức Pythagore tính khoảng cách chuột -> đỉnh
@@ -672,7 +674,7 @@ public class Welcome : Form
                     return;
                 }
             }
-            
+
             // Nếu không click vào đỉnh, kiểm tra xem có click vào cạnh không
             foreach (Vertex v in graph.GetAllVertices())
             {
@@ -680,26 +682,26 @@ public class Welcome : Form
                 while (edgeNode != null)
                 {
                     Vertex dest = edgeNode.Data.Destination;
-                    
+
                     // Khoảng cách từ điểm click đến đoạn thẳng cạnh
                     double edgeDist = PointToSegmentDistance(worldX, worldY, v.X, v.Y, dest.X, dest.Y);
-                    
+
                     // Phạm vi sai số cho đường kẻ mỏng hơn 1 xíu so với đỉnh
-                    if (edgeDist <= hitRadius * 0.8) 
+                    if (edgeDist <= hitRadius * 0.8)
                     {
                         selectedVertex = null; // Bỏ chọn đỉnh
                         selectedEdgeKey = v.Id + "_" + dest.Id; // Ghi nhận cạnh đang chọn
                         mapPanel.Invalidate();
-                        
+
                         bool isDirected = !graph.HasEdge(dest, v);
                         ShowEdgeInfo(v.Id, dest.Id, isDirected, edgeNode.Data.Weight, e.Location);
                         return;
                     }
-                    
+
                     edgeNode = edgeNode.Next;
                 }
             }
-            
+
             // Nếu click ra ngoài khoảng trống thì bỏ chọn
             selectedVertex = null;
             selectedEdgeKey = null;
@@ -715,7 +717,7 @@ public class Welcome : Form
             // 1. VẼ LƯỚI TỌA ĐỘ GRIDLINE
             Pen gridPen = new Pen(Color.FromArgb(230, 230, 230), 1);
             int gridSize = 50; // Kích thước mỗi ô vuông
-            
+
             // Vẽ các hoành độ tung độ lấp đầy panel hiện tại
             for (int i = -100; i < 200; i++)
             {
@@ -733,7 +735,7 @@ public class Welcome : Form
             // Các công cụ vẽ
             Pen normalEdgePen = new Pen(Color.FromArgb(90, 150, 150, 150), 1); // Cạnh bình thường mờ đi (Alpha 90) để đỡ rối
             Pen highlightEdgePen = new Pen(Color.Red, 3); // Đường đi tô đậm màu đỏ
-            
+
             Pen normalDirectedPen = new Pen(Color.FromArgb(90, 150, 150, 150), 1);
             normalDirectedPen.CustomEndCap = new AdjustableArrowCap(4, 4);
 
@@ -743,7 +745,7 @@ public class Welcome : Form
             Pen selectedEdgePen = new Pen(Color.DodgerBlue, 3); // Bút vẽ cạnh đang chọn
             Pen selectedDirectedPen = new Pen(Color.DodgerBlue, 3);
             selectedDirectedPen.CustomEndCap = new AdjustableArrowCap(4, 4);
-            
+
             Brush normalNodeBrush = Brushes.Black;
             Brush selectedNodeBrush = Brushes.DodgerBlue;
             Brush highlightedNodeBrush = Brushes.Red;
@@ -752,14 +754,14 @@ public class Welcome : Form
             // Ghi nhớ các cạnh thuộc Đường đi ngắn nhất để sau đó tô màu đỏ
             HashSet<string> highlightedEdges = new HashSet<string>();
             HashSet<string> highlightedNodes = new HashSet<string>();
-            
+
             if (currentPath != null && currentPath.Head != null)
             {
                 ListNode<Vertex> cur = currentPath.Head;
                 while (cur != null)
                 {
                     highlightedNodes.Add(cur.Data.Id); // Lấy danh sách đỉnh màu đỏ
-                    
+
                     if (cur.Next != null)
                     {
                         // Highlight cạnh từ điểm bắt đầu và kết thúc
@@ -781,7 +783,7 @@ public class Welcome : Form
 
                     bool isHighlighted = highlightedEdges.Contains(edgeKey);
                     bool isSelected = (selectedEdgeKey == edgeKey || selectedEdgeKey == dest.Id + "_" + v.Id);
-                    
+
                     // Kiểm tra xem đây có phải là cạnh có hướng không (nếu đỉnh kia không có cạnh ngược lại)
                     bool isDirected = !graph.HasEdge(dest, v);
 
@@ -845,7 +847,7 @@ public class Welcome : Form
 
                 // Vẽ cục tròn
                 g.FillEllipse(currentBrush, drawX - r, drawY - r, r * 2, r * 2);
-                
+
                 // Vẽ text là tên thành phố
                 // Chỉ vẽ chữ khi Zoom to (scale >= 1.5) HOẶC đỉnh đang được chọn HOẶC đỉnh nằm trong đường đi
                 if (scale >= 1f || v == selectedVertex || highlightedNodes.Contains(v.Id))
