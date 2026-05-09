@@ -16,8 +16,11 @@ namespace DoAnCuoiKy_Dijkstra
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            // Khởi chạy file MainForm.cs vừa tạo
-            Application.Run(new MainForm());
+            Welcome welcome=new Welcome();
+            if (welcome.ShowDialog()==DialogResult.OK)//khi nhấn bắt đầu chạy giao diện MainForm
+            {
+                 Application.Run(new MainForm());
+            }
         }
     }
 }
